@@ -1,0 +1,3016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>XCCDF Test Result</title>
+    <meta name="generator" content="" />
+    <meta name="Content-Type" content="text/html;charset=utf-8" />
+    <style type="text/css" media="all">
+    html, body { background-color: black; font-family:sans-serif; margin:0; padding:0; }
+    abbr { text-transform:none; border:none; font-variant:normal; }
+    div.score-outer { height: .8em; width:100%; min-width:100px; background-color: red; }
+    div.score-inner { height: 100%; background-color: green; }
+    .score-max, .score-val, .score-percent { text-align:right; }
+    .score-percent { font-weight: bold; }
+    th, td { padding-left:.5em; padding-right:.5em; }
+    .rule-selected, .result-pass strong, .result-fixed strong { color:green; }
+    .rule-inactive, .unknown, .result-notselected strong, .result-notchecked strong, .result-notapplicable strong, .result-informational strong, .result-unknown strong { color:#555; }
+    .rule-notselected, .result-error strong, .result-fail strong { color:red; }
+    table { border-collapse: collapse; border: 1px black solid; width:100%; }
+    table th, thead tr { background-color:black; color:white; }
+    table td { border-right: 1px black solid; }
+    table td.result, table td.link { text-align:center; }
+    table td.num { text-align:right; }
+    div#rule-results-summary { margin-bottom: 1em; }
+    table tr.result-legend td { width: 10%; }
+    div#content p { text-align:justify; }
+    div.result-detail { border: 1px solid black; margin: 2em 0; padding: 0 1em; }
+    div#content h2 { border-bottom:2px dashed; margin-top:1em; margin-bottom:0.5em; text-align:center; }
+    div#content h2#summary { margin-top:0; }
+    h1 { margin:1em 0; }
+    div.raw table, div.raw table td { border:none; width:auto; padding:0; }
+    div.raw table { margin-left: 2em; }
+    div.raw table td { padding: .1em .7em; }
+    table tr { border-bottom: 1px dotted #000; }
+    dir.raw table tr { border-bottom: 0 !important; }
+    pre.code { background: #ccc; padding:.2em; }
+    ul.toc-struct li { list-style-type: none; }
+    div.xccdf-rule { margin-left: 10%; }
+    div#footer, p.remark, .link { font-size:.8em; }
+    thead tr td { font-weight:bold; text-align:center; }
+    .hidden { display:none; }
+    td.score-bar { text-align:center; }
+    td.score-bar span.media { width:100%; min-width:7em; height:.8em; display:block; margin:0; padding:0; }
+    .oval-results { font-size:.8em; overflow:auto; }
+    div#guide-top-table table { width: 100%; }
+    td#common-info { min-width: 25.0em; border-right: 1px solid #000; }
+    td#versions-revisions { width: 25.0em; }
+  </style>
+    <style type="text/css" media="screen">
+    div#content, div#header, div#footer { margin-left:1em; margin-right:1em; }
+    div#content { background-color: white; padding:2em; }
+    div#footer, div#header { color:white; text-align:center; }
+    a, a:visited { color:blue; text-decoration:underline; }
+    div#content p.link { text-align:right; font-size:.8em; }
+    div#footer a { color:white; }
+    div.xccdf-group, div.xccdf-rule { border-left: 3px solid white; padding-left:.3em; }
+    div.xccdf-group:target, div.xccdf-rule:target { border-left-color:#ccc; }
+    .toc-struct li:target { background:#ddd; }
+    abbr { border-bottom: 1px black dotted; }
+    abbr.date { border-bottom:none; }
+    pre.code { overflow:auto; }
+    table tbody tr:hover { background: #ccc; }
+    div.raw table tbody tr:hover { background: transparent !important; }
+  </style>
+    <style type="text/css" media="print">
+    @page { margin:3cm; }
+    html, body { background-color:white; font-family:serif; }
+    .link { display:none; }
+    a, a:visited { color:black; text-decoration:none; }
+    div#header, div#footer { text-align:center; }
+    div#header { padding-top:36%; }
+    h1 { vertical-align:center; }
+    h2 { page-break-before:always; }
+    h3, h4, h5  { page-break-after:avoid; }
+    pre.code { background: #ccc; }
+    div#footer { margin-top:auto; }
+    .toc-struct { page-break-after:always; }
+  </style>
+  </head>
+  <body>
+    <div id="xccdf_org.open-scap_testresult_xccdf_preupg_profile_default">
+      <div id="header">
+        <h1>XCCDF Test Result</h1>
+      </div>
+      <div id="content">
+        <div id="intro">
+          <h2>Introduction</h2>
+          <div>
+            <h3>Scanner</h3>
+            <ul>
+              <li>preupgrade-assistant-1.0.2-36.0.1.el6.centos</li>
+              <li>preupgrade-assistant-contents-0.5.14-1.el6.centos</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Target info</h3>
+            <div class="raw">
+              <table>
+                <tbody>
+                  <tr>
+                    <td valign="top">
+                      <h4>Targets</h4>
+                      <ul class="itemizedlist">
+                        <li>learninghouse.com</li>
+                      </ul>
+                    </td>
+                    <td valign="top">
+                      <h4>Addresses</h4>
+                      <ul class="itemizedlist">
+                        <li>127.0.0.1</li>
+                        <li>172.16.188.128</li>
+                        <li>0:0:0:0:0:0:0:1</li>
+                        <li>fe80:0:0:0:20c:29ff:fe57:ea5d</li>
+                      </ul>
+                    </td>
+                    <td></td>
+                    <td valign="top">
+                      <h4>Platforms</h4>
+                      <ul class="itemizedlist">
+                        <li>cpe:/o:centos:centos:6</li>
+                      </ul>
+                    </td>
+                    <td valign="top"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="results-overview">
+          <h2>Results overview</h2>
+          <div id="rule-results-summary">
+            <h4>Rule Results Summary</h4>
+            <table>
+              <thead>
+                <tr>
+                  <td>pass</td>
+                  <td>fixed</td>
+                  <td>fail</td>
+                  <td>needs inspection</td>
+                  <td>needs action</td>
+                  <td>error</td>
+                  <td>not selected</td>
+                  <td>not checked</td>
+                  <td>not applicable</td>
+                  <td>informational</td>
+                  <td>unknown</td>
+                  <td>total</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="result-legend">
+                  <td align="center" class="result-pass">
+                    <strong class="strong">17</strong>
+                  </td>
+                  <td align="center" class="result-fixed">
+                    <strong class="strong">4</strong>
+                  </td>
+                  <td align="center" class="result-fail">
+                    <strong class="strong">0</strong>
+                  </td>
+                  <td align="center" class="result-needsinspection">
+                    <strong class="strong">7</strong>
+                  </td>
+                  <td align="center" class="result-needsaction">
+                    <strong class="strong">5</strong>
+                  </td>
+                  <td align="center" class="result-error">
+                    <strong class="strong">0</strong>
+                  </td>
+                  <td align="center" class="result-notselected">
+                    <strong class="strong">5</strong>
+                  </td>
+                  <td align="center" class="result-notchecked">
+                    <strong class="strong">0</strong>
+                  </td>
+                  <td align="center" class="result-notapplicable">
+                    <strong class="strong">49</strong>
+                  </td>
+                  <td align="center" class="result-informational">
+                    <strong class="strong">14</strong>
+                  </td>
+                  <td align="center" class="result-unknown">
+                    <strong class="strong">0</strong>
+                  </td>
+                  <td align="center">
+                    <strong class="strong">101</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h4 class="hidden">Rule results summary</h4>
+            <table>
+              <thead>
+                <tr>
+                  <td>Title</td>
+                  <td>Result</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="result-fixed">
+                  <td class="id">
+                    <a href="#ruleresult-idp6993504">Replaced rpms</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">fixed</strong>
+                  </td>
+                </tr>
+                <tr class="result-fixed">
+                  <td class="id">
+                    <a href="#ruleresult-idp7013536">package downgrades</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">fixed</strong>
+                  </td>
+                </tr>
+                <tr class="result-fixed">
+                  <td class="id">
+                    <a href="#ruleresult-idp7125296">OpenSSH sysconfig migration content</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">fixed</strong>
+                  </td>
+                </tr>
+                <tr class="result-fixed">
+                  <td class="id">
+                    <a href="#ruleresult-idp7168640">State of LVM2 services.</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">fixed</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp6880864">Compatibility Between iptables and ip6tables</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp6909008">VCS repositories</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp6959104">Removed options in coreutils binaries</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp6965712">Removed options in gawk binaries</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp6972208">Removed options in netstat binary</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7000544">GMP library incompatibilities</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7050304">CVS Package Split</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7063920">httpd configuration compatibility check</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7248368">File Systems, Partitions and Mounts Configuration Review</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7263808">Sonamebumped libs</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7271168">SonameKept Reusable Dynamic Libraries</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7277584">Removed .so libs</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7348544">Foreign Perl modules</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-informational">
+                  <td class="id">
+                    <a href="#ruleresult-idp7392000">YUM</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">informational</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_action">
+                  <td class="id">
+                    <a href="#ruleresult-idp6929920">Packages not signed by CentOS</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_action</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_action">
+                  <td class="id">
+                    <a href="#ruleresult-idp6985968">Removed rpms</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_action</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_action">
+                  <td class="id">
+                    <a href="#ruleresult-idp7028592">General</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_action</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_action">
+                  <td class="id">
+                    <a href="#ruleresult-idp7311616">Content for enabling and disabling services based on CentOS 6 system</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_action</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_action">
+                  <td class="id">
+                    <a href="#ruleresult-idp7327008">User modification in /etc/rc.local and /etc/rc.d/rc.local</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_action</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp6744592">Configuration Files to Review</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp6751824">File Lists for Manual Migration</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp6937264">Obsoleted rpms</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp7212976">Binary rebuilds</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp7354928">Python 2.7.5</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp7364400">Ruby 2.0.0</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-needs_inspection">
+                  <td class="id">
+                    <a href="#ruleresult-idp7398352">Check for usage of dangerous range of UID/GIDs</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">needs_inspection</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp6824352">several kernel networking drivers not available in CentOS 7</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp6831008">several kernel storage drivers not available in CentOS 7</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp6902544">Reusable Configuration Files</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7098784">NTP configuration</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7105216">Information on time-sync.target</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7118832">OpenSSH sshd_config migration content</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7206448">Architecture Support</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7220336">Debuginfo packages</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7227488">Cluster and High Availability</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7254832">Read Only FHS directories</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7284960">In-place Upgrade Requirements for the /usr/ Directory</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7292416">CA certificate bundles modified</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7298880">Developer Tool Set packages</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7305232">Hyper-V</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7320512">Check for ethernet interface naming</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7341344">Plugable authentication modules (PAM)</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+                <tr class="result-pass">
+                  <td class="id">
+                    <a href="#ruleresult-idp7404848">Incorrect usage of reserved UID/GIDs</a>
+                  </td>
+                  <td class="result">
+                    <strong class="strong">pass</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="results-details">
+          <h2>Results details</h2>
+          <div class="result-detail" id="ruleresult-idp6744592">
+            <h3>Result for Configuration Files to Review</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_backup_NoverifyConfigs_noverifycfg</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:26" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        This module stores some system configuration files that can have been modified by the user when it is not possible to automatically upgrade them.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some packages do not track the possible performed changes to system configuration files; therefore, it cannot be easily determined if the files have been modified by the user or not. In order to allow for later examination, all configuration files not handled by the migration scripts are stored in the <a href="./dirtyconf/">dirtyconf/</a> directory. The list of the stored files is available in the <a href="././kickstart/noverifycfg">./kickstart/noverifycfg</a> file. The user is advised to verify the functionality of configuration files stored by this tool after a successful upgrade.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: SLIGHT: We detected some files where modifications are not tracked in the rpms. You may need to check their functionality after successful upgrade.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6751824">
+            <h3>Result for File Lists for Manual Migration</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_backup_UntrackedFiles_untracked</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:26" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        This module generates lists of files, such as temporary, application, and user data files, which are not automatically migrated.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some user data, such as user home directories and temporary files, are not tracked by the RPM database. This data will <b>not</b> be automatically migrated. To assist you with migrating the data, this module has generated the following three files.<br/>
+<br/>
+* The <a href="././kickstart/untrackedsystem">./kickstart/untrackedsystem</a> file lists the regular files on the system that will not be migrated. The list does not contain files mounted over the network, files created by runtime system operations, files in temporary locations, and user files in the /home/ or /root/ directory.<br/>
+<br/>
+* The <a href="././kickstart/untrackeduser">./kickstart/untrackeduser</a> file lists the regular local files in the /home/ and /root/ directories that will not be migrated. If the /home/ and /root/ directories are on a file system mounted over the network, this file can be empty.<br/>
+<br/>
+* The <a href="././kickstart/untrackedexpected">./kickstart/untrackedexpected</a> file lists the regular files and symlinks created by runtime system operations (for example handling runlevels, alternatives and active SELinux modules). Most likely you don&apos;t need to care about them, list is available just for completeness.<br/>
+<br/>
+* The <a href="././kickstart/untrackedtemporary">./kickstart/untrackedtemporary</a> file lists all temporary local files on the system that will not be migrated. This is essentially everything in the /cgroup/, /tmp/, and /var/ directories. Most likely you don&apos;t need to care about them, list is available just for completeness.<br/>
+<br/>
+It is recommended that you backup all data before proceeding with the upgrade to CentOS 7. This data can be quite large.<br/>
+<br/>
+If you are performing an in-place upgrade, this data should remain in its current location after the upgrade. Configuration files and other data should be reviewed to determine if any modifications are needed for use with CentOS 7. You should verify that all data was successfully maintained.<br/>
+<br/>
+If you are performing a migration upgrade, this data <b>must</b> be backed up to another storage medium. You will need to copy the data you wish to have on the new installation back into place after the upgrade is complete. Configuration files and other data should be reviewed to determine if any modifications are needed for use with CentOS 7.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: SLIGHT: We detected some files untracked by rpms. Some of these may need manual check/migration after redhat-upgrade-tool and/or can cause conflicts or troubles during the installation. Try to reduce unnecessary untracked files before running redhat-upgrade-tool.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6824352">
+            <h3>Result for several kernel networking drivers not available in CentOS 7</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_drivers_ObsoletedNetworkDrivers_obsoletedNetworkDrivers</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:27" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Several kernel networking drivers were removed from CentOS 7.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6831008">
+            <h3>Result for several kernel storage drivers not available in CentOS 7</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_drivers_ObsoletedStorageDrivers_obsoletedStorageDrivers</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:27" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Several kernel storage drivers were deprecated or removed in CentOS 7.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6880864">
+            <h3>Result for Compatibility Between iptables and ip6tables</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_networking_iptables_check_script</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:27" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        The firewalld service is now the default firewall service.
+        
+        </p>
+            <p>
+            File(s) affected:
+            <ul class="itemizedlist"><li><p>/etc/sysconfig/iptables</p></li><li><p>/etc/sysconfig/ip6tables</p></li></ul></p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              If you are migrating from CentOS 6 to CentOS 7, verify whether you have the iptables-services packages installed after performing the upgrade by running the &quot;rpm -q iptables-services&quot; command as root. Also, verify that iptables and ip6tables services are enabled by running the &quot;systemctl is-enabled iptables&quot; and &quot;systemctl is-enabled ip6tables&quot; commands as root.<br/>
+<br/>
+For more details about migrating the firewall service from CentOS 6, see the section about the firewalld service in the Red Hat Enterprise Linux 7 Migration Planning guide at <a href="https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Migration_Planning_Guide/">https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Migration_Planning_Guide/</a>.<br/>
+<br/>
+If you perform a clean installation of CentOS 7, the firewalld service will be installed on your system instead of iptables and ip6tables.<br/>
+<br/>
+For further details about the firewalld service, see the section about firewalls in Red Hat Enterprise Linux 7 Security Guide. You can access the guide at <a href="https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/">https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/</a>.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INFO iptables: Creating /root/preupgrade/postupgrade.d/reenable-iptables
+WARNING iptables: Please read Remediation instructions.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6902544">
+            <h3>Result for Reusable Configuration Files</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_others_NoVersionChangeEtc_nochange</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:28" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        The module provides a list of the configuration files that can be reused in CentOS 7.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6909008">
+            <h3>Result for VCS repositories</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_others_vcsrepos_check_script</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:28" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Find Versin Control System repositories in /home and /root - git, svn, cvs, bzr.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              VCS repositories not found.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6929920">
+            <h3>Result for Packages not signed by CentOS</h3>
+            <p class="result-needs_action">Result: <strong class="strong">needs_action</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_NonCentOSSignedPkg_noncentospkg</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:28" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Packages not signed by CentOS will not be upgraded
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Packages which are not signed with the official CentOS keys will not be upgraded. These packages are typically provided by third parties or have been modified in some way. There is a high risk of incompatibility with these packages as they have not been verified by CentOS. For upgrade assistance, contact the vendors of these packages.<br/>
+<br/>
+You can find a list of all unsigned packages including the vendor names in the <a href="./kickstart/noncentospkgs">kickstart/noncentospkgs</a> file.<br/>
+<br/>
+<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: HIGH: We detected some non-CentOS signed packages, you can find the list in /root/preupgrade/./kickstart/noncentospkgs. You need to handle them yourself!
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6937264">
+            <h3>Result for Obsoleted rpms</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_ObsoletedPackages_ObsoletedPkg</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:29" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some rpms were obsoleted from the set of the packages between CentOS 6 and CentOS 7. This content checks for the package obsoletes from your set of CentOS packages.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some of the packages were obsoleted between CentOS 6 and CentOS 7. This means<br/>
+CentOS provides some alternative for them, but these alternatives may be<br/>
+not 100% compatible - thus we don&apos;t replace them automatically. For some of<br/>
+the obsoletes you will get the incompatibilities from separate preupgrade<br/>
+contents and you can adjust your workflow according to the changes. Sometimes,<br/>
+package might be replaced by several others.<br/>
+<br/>
+Following packages were obsoleted by different ones:<br/>
+ConsoleKit was obsoleted by systemd<br/>
+compat-readline5 was obsoleted by libedit<br/>
+eggdbus was obsoleted by glib2<br/>
+grub was obsoleted by grub2<br/>
+mingetty was obsoleted by util-linux<br/>
+mod_perl was obsoleted by mod_fcgid<br/>
+udev was obsoleted by systemd<br/>
+upstart was obsoleted by systemd<br/>
+<br/>
+If some NonCentOS signed package requires these packages, you may need to check if the<br/>
+alternative solution provided by CentOS does work for you or get the missing package<br/>
+from different sources than CentOS. You need to install these new packages yourself<br/>
+after the assessment, as CentOS can&apos;t assess the compatibility for you.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: MEDIUM: We detected some packages installed on the system were removed (obsoleted) between CentOS 6 and CentOS 7. This may break the functionality of the packages depending on them.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6959104">
+            <h3>Result for Removed options in coreutils binaries</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_RemovedOptions_coreutils_removedoptions</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:29" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some options and binaries were removed from coreutils package between CentOS 6 and CentOS 7. This informative content lists the incompatibilities.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some options and binaries were removed from coreutils package between<br/>
+CentOS 6 and CentOS 7. This may break functionality of some of your scripts.<br/>
+All option/binaries removals with solutions are listed bellow.<br/>
+<br/>
+factor : --verbose renamed to --debug<br/>
+install : --preserve_context is removed, --preserve-context can be used<br/>
+instead<br/>
+nl : CentOS 6 deprecated option --page-increment removed, --line-increment<br/>
+can be used instead<br/>
+runuser and su binaries moved to util-linux rpm<br/>
+stat: -Z / --context option support was removed, SELinux context is now<br/>
+part of the default format. Formatting changed, though.<br/>
+touch: undocumented and deprecated --file option support removed,<br/>
+--reference should be used instead.<br/>
+mkdir,mknod,mkfifo,cp,install: short -Z option no longer accepts the argument<br/>
+and sets default SELinux context, --context=CTX long option has to be used<br/>
+for setting context to CTX<br/>
+<br/>
+Please check that your scripts are aware of these changes.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6965712">
+            <h3>Result for Removed options in gawk binaries</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_RemovedOptions_gawk_removedoptions</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:29" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some options and binaries were removed from gawk package between CentOS 6 and CentOS 7. This informative content lists the incompatibilities.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some options were removed from gawk package binaries between CentOS 6<br/>
+and CentOS 7. This may break functionality of some of your scripts.<br/>
+All option removals with solutions are listed bellow.<br/>
+<br/>
+awk/gawk/pgawk: --compat - option was removed, alternative is<br/>
+--traditional<br/>
+--copyleft - option was removed, alternative is<br/>
+--copyright/-C<br/>
+--gen-po - option was replaced by --gen-pot option<br/>
+--usage<br/>
+-D - short form of --parsedebug was changed to -Y<br/>
+<br/>
+Please check that your scripts are aware of these changes.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6972208">
+            <h3>Result for Removed options in netstat binary</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_RemovedOptions_nettools_removedoptions</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:29" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some options were removed from netstat binary between CentOS 6 and CentOS 7. This informative content lists the incompatibilities.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some options were removed from netstat binary of net-tools package between<br/>
+CentOS 6 and CentOS 7. This may break functionality of some of your scripts.<br/>
+All option removals with solutions are listed bellow.<br/>
+<br/>
+netstat : -T/--notrim renamed to -W/--wide<br/>
+<br/>
+Please check that your scripts are aware of these changes.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6985968">
+            <h3>Result for Removed rpms</h3>
+            <p class="result-needs_action">Result: <strong class="strong">needs_action</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_RemovedPackages_RemovedPkg</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:30" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some rpms were removed from the set of the packages between CentOS 6 and CentOS 7. This content checks for the package removals from your set of CentOS packages.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some of the packages were removed between CentOS 6 and CentOS 7. This may break<br/>
+the upgrade for some of your packages. We are not aware of any compatible<br/>
+replacement for these packages.<br/>
+<br/>
+Following packages are no longer available:<br/>
+ConsoleKit-libs<br/>
+MAKEDEV<br/>
+atmel-firmware<br/>
+b43-openfwwf<br/>
+cloog-ppl<br/>
+dash<br/>
+ipw2100-firmware<br/>
+ipw2200-firmware<br/>
+libc-client<br/>
+libc-client-devel<br/>
+libgcj<br/>
+libnih<br/>
+perl-BSD-Resource<br/>
+ppl<br/>
+zd1211-firmware<br/>
+<br/>
+If some NonCentOS signed package requires these packages, you may need to ask your<br/>
+vendor to provide alternative solution or get the missing package from<br/>
+different sources than RHEL.<br/>
+<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: HIGH: After upgrading to CentOS 7 there are still some el6 packages left. Add --cleanup-post option to redhat-upgrade-tool if you want to remove them automatically.
+INPLACERISK: MEDIUM: We detected some packages installed on the system were removed between CentOS 6 and CentOS 7. This may break the functionality of the packages depending on them.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp6993504">
+            <h3>Result for Replaced rpms</h3>
+            <p class="result-fixed">Result: <strong class="strong">fixed</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_ReplacedPackages_ReplacedPkg</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:35" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some rpms were replaced between CentOS 6 and CentOS 7. This content checks for the package replacements from your set of CentOS packages and generates the list of CentOS packages/yum groups for CentOS 7 kickstart.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some of the packages were replaced between CentOS 6 and CentOS 7. This means<br/>
+package with different name provides 100% compatible functionality, so we<br/>
+can replace them automatically in the package set.<br/>
+For some of the replacements provides were not handled by the packages,<br/>
+therefore preupgrade asistant migrates them after the upgrade if necessary.<br/>
+<br/>
+Following packages were replaced:<br/>
+bfa-firmware was replaced by linux-firmware<br/>
+coreutils-libs was replaced by coreutils<br/>
+db4-devel was replaced by libdb-devel<br/>
+db4-utils was replaced by libdb-utils<br/>
+db4 was replaced by libdb<br/>
+dracut-kernel was replaced by dracut<br/>
+iptables-ipv6 was replaced by iptables-services<br/>
+kernel-firmware was replaced by linux-firmware<br/>
+libudev was replaced by systemd-libs<br/>
+man was replaced by man-db<br/>
+module-init-tools was replaced by kmod<br/>
+perl-Compress-Zlib was replaced by perl-IO-Compress<br/>
+perl-IO-Compress-Base was replaced by perl-IO-Compress<br/>
+perl-IO-Compress-Zlib was replaced by perl-IO-Compress<br/>
+procps (required by NonCentOS signed package(s):Percona-Server-server-55 ) was replaced by procps-ng<br/>
+python-imaging (required by NonCentOS signed package(s):ajenti ) was replaced by python-pillow<br/>
+ql2100-firmware was replaced by linux-firmware<br/>
+ql2200-firmware was replaced by linux-firmware<br/>
+ql23xx-firmware was replaced by linux-firmware<br/>
+ql2400-firmware was replaced by linux-firmware<br/>
+ql2500-firmware was replaced by linux-firmware<br/>
+rt61pci-firmware was replaced by linux-firmware<br/>
+rt73usb-firmware was replaced by linux-firmware<br/>
+ruby-rdoc was replaced by rubygem-rdoc<br/>
+util-linux-ng was replaced by util-linux<br/>
+xorg-x11-drv-ati-firmware was replaced by linux-firmware<br/>
+<br/>
+If some NonCentOS signed package requires these packages, you still may want<br/>
+to monitor them closely. Although the replacement should be compatible,<br/>
+it can have some minor differences expectable even in the case of common<br/>
+application lifecycle.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7000544">
+            <h3>Result for GMP library incompatibilities</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_gmp_check_script</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:35" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Incompatibilities between GMP 4 and GMP 5.1 libraries.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              GMP 5.1 is compatible with GMP 4 in major features. Incompatible changes affect only functions, which should not be used by user applications at all:<br/>
+- mpn_bdivmod function<br/>
+- BSDMP-like interface libmp.so<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7013536">
+            <h3>Result for package downgrades</h3>
+            <p class="result-fixed">Result: <strong class="strong">fixed</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_packages_pkgdowngrades_pkgdowngrades</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:35" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        detects package downgrades from CentOS6 to CentOS7
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Some packages installed on your system have broken upgrade path from<br/>
+CentOS version 6 to version 7 (the version of package is lower in<br/>
+newer CentOS).<br/>
+<br/>
+This does not cause fail of redhat-upgrade-tool run. Packages with broken<br/>
+upgrade path are fixed by postupgrade script.<br/>
+<br/>
+~&gt; Optionally, if possible, you may remove packages in question from CentOS 6<br/>
+system.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7028592">
+            <h3>Result for General</h3>
+            <p class="result-needs_action">Result: <strong class="strong">needs_action</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_selinux_general_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:35" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        There has to be some steps performed in order to have working SELinux on CentOS 7.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              We have detected that you are using SELinux. There were changes in policies which require to apply custom command before upgrade process. In order to have working SELinux on CentOS 7, you <b>HAVE TO</b> run command prior to running redhat-upgrade-tool:<br/>
+semodule -r sandbox<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: HIGH: There were changes in SELinux policies between CentOS 6 and CentOS 7. Please, check solution in order to resolve this issue.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7050304">
+            <h3>Result for CVS Package Split</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_cvs_checkscript</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:35" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some Concurrent Versions System (CVS) tools and documentation have been moved into separate packages and are no longer provided by the cvs packages.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              The Concurrent Versions System (CVS) server and client have not been changed significantly and should be fully compatible. However, some tools and documentation have been moved to other packages which could concern some users.<br/>
+<br/>
+The rcs2log and contrib utilities have been moved into the new cvs-contrib packages in order to remove the cvs packages dependency on perl and reduce the size of the cvs packages. If you require the rcs2log and contrib tools, you can install the packages manually by running the &quot;yum install cvs-contrib&quot; command as root.<br/>
+<br/>
+Additional documentation, such as books concerning CVS tools in the PDF format and revision control system (RCS) specification files, has been moved into the new cvs-doc package to reduce the size of the cvs packages. If you want to access this additional documentation, install the package manually by running the &quot;yum install cvs-doc&quot; command as root. The manual and Texinfo pages are still included in the cvs packages.<br/>
+<br/>
+These utilities and the supplemental documentation are not used by the CVS client or server. Their absence does not pose a risk when upgrading the cvs packages.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7063920">
+            <h3>Result for httpd configuration compatibility check</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_httpd_check_script</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Checks httpd configuration compatibility
+        
+        </p>
+            <p>
+            File(s) affected:
+            <ul class="itemizedlist"><li><p>/etc/httpd/conf/httpd.conf</p></li></ul></p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              * httpd.conf does not include conf.modules.d/*.conf. This directory will be<br/>
+included automatically.<br/>
+<br/>
+* httpd.conf loads modules which are loaded in conf.modules.d/*conf<br/>
+in new httpd version. Following modules will be therefore removed from<br/>
+httpd.conf:<br/>
+<br/>
+modules\/mod_actions.so<br/>
+modules\/mod_alias.so<br/>
+modules\/mod_auth_basic.so<br/>
+modules\/mod_auth_digest.so<br/>
+modules\/mod_authn_anon.so<br/>
+modules\/mod_authn_dbm.so<br/>
+modules\/mod_authn_file.so<br/>
+modules\/mod_authz_dbm.so<br/>
+modules\/mod_authz_groupfile.so<br/>
+modules\/mod_authz_host.so<br/>
+modules\/mod_authz_owner.so<br/>
+modules\/mod_authz_user.so<br/>
+modules\/mod_autoindex.so<br/>
+modules\/mod_cache.so<br/>
+modules\/mod_deflate.so<br/>
+modules\/mod_dir.so<br/>
+modules\/mod_env.so<br/>
+modules\/mod_expires.so<br/>
+modules\/mod_ext_filter.so<br/>
+modules\/mod_headers.so<br/>
+modules\/mod_include.so<br/>
+modules\/mod_info.so<br/>
+modules\/mod_log_config.so<br/>
+modules\/mod_logio.so<br/>
+modules\/mod_mime_magic.so<br/>
+modules\/mod_mime.so<br/>
+modules\/mod_negotiation.so<br/>
+modules\/mod_rewrite.so<br/>
+modules\/mod_setenvif.so<br/>
+modules\/mod_status.so<br/>
+modules\/mod_substitute.so<br/>
+modules\/mod_suexec.so<br/>
+modules\/mod_userdir.so<br/>
+modules\/mod_version.so<br/>
+modules\/mod_vhost_alias.so<br/>
+modules\/mod_dav.so<br/>
+modules\/mod_dav_fs.so<br/>
+modules\/mod_proxy.so<br/>
+modules\/mod_proxy_ajp.so<br/>
+modules\/mod_proxy_balancer.so<br/>
+modules\/mod_proxy_connect.so<br/>
+modules\/mod_proxy_ftp.so<br/>
+modules\/mod_proxy_http.so<br/>
+modules\/mod_disk_cache.so<br/>
+modules\/mod_cgi.so<br/>
+modules\/mod_ldap.so<br/>
+modules\/mod_authnz_ldap.so<br/>
+modules\/mod_speling.so<br/>
+modules\/mod_usertrack.so<br/>
+<br/>
+* httpd.conf loads default modules which have been removed in new version<br/>
+of httpd. Following modules will be therefore removed from httpd.conf:<br/>
+<br/>
+modules\/mod_authn_alias.so<br/>
+modules\/mod_authn_default.so<br/>
+modules\/mod_authz_default.so<br/>
+<br/>
+* httpd config files contain deprecated Access control directives Order, Allow,<br/>
+Deny, and Satisfy. The old access control idioms should be replaced<br/>
+by the new authentication mechanisms, although for compatibility with old<br/>
+configurations, the new module mod_access_compat is provided and loaded by<br/>
+default.<br/>
+<br/>
+* mod_perl is no longer provided in CentOS7. It is loaded in httpd<br/>
+configuration but it seems it is not used. This module will be unloaded<br/>
+automatically.<br/>
+<br/>
+* &quot;SSLMutex default&quot; is not needed in httpd-2.4 and will be removed<br/>
+automatically.<br/>
+<br/>
+* &quot;SSLPassPhraseDialog builtin&quot; should not be used in httpd-2.4 because of<br/>
+systemd integration.<br/>
+&quot;SSLPassPhraseDialog exec:/usr/libexec/httpd-ssl-pass-dialog&quot; will be used<br/>
+instead automatically.<br/>
+<br/>
+* &quot;SSLSessionCache shmcb:/var/cache/mod_ssl/scache(512000)&quot; should not be used<br/>
+in httpd-2.4 because of directory change.<br/>
+&quot;SSLSessionCache shmcb:/run/httpd/sslcache(512000)&quot; will be used instead<br/>
+automatically.<br/>
+<br/>
+Read more on <a href="http://httpd.apache.org/docs/2.4/upgrading.html">http://httpd.apache.org/docs/2.4/upgrading.html</a> to find out solutions for these problems.<br/>
+<br/>
+This section of solution text shows the difference between this system<br/>
+configuration of httpd and the default httpd 2.2 configuration:<br/>
+<br/>
+--- httpd.conf	2014-06-26 10:57:58.000000000 -0400<br/>
++++ /etc/httpd//conf/httpd.conf	2012-12-20 09:36:23.466938237 -0500<br/>
+@@ -1,152 +1,31 @@<br/>
+-#<br/>
+-# This is the main Apache server configuration file.  It contains the<br/>
+-# configuration directives that give the server its instructions.<br/>
+-# See &lt;URL:http://httpd.apache.org/docs/2.2/&gt; for detailed information.<br/>
+-# In particular, see<br/>
+-# &lt;URL:http://httpd.apache.org/docs/2.2/mod/directives.html&gt;<br/>
+-# for a discussion of each configuration directive.<br/>
+-#<br/>
+-#<br/>
+-# Do NOT simply read the instructions in here without understanding<br/>
+-# what they do.  They&apos;re here only as hints or reminders.  If you are unsure<br/>
+-# consult the online docs. You have been warned.<br/>
+-#<br/>
+-# The configuration directives are grouped into three basic sections:<br/>
+-#  1. Directives that control the operation of the Apache server process as a<br/>
+-#     whole (the &apos;global environment&apos;).<br/>
+-#  2. Directives that define the parameters of the &apos;main&apos; or &apos;default&apos; server,<br/>
+-#     which responds to requests that aren&apos;t handled by a virtual host.<br/>
+-#     These directives also provide default values for the settings<br/>
+-#     of all virtual hosts.<br/>
+-#  3. Settings for virtual hosts, which allow Web requests to be sent to<br/>
+-#     different IP addresses or hostnames and have them handled by the<br/>
+-#     same Apache server process.<br/>
+-#<br/>
+-# Configuration and logfile names: If the filenames you specify for many<br/>
+-# of the server&apos;s control files begin with &quot;/&quot; (or &quot;drive:/&quot; for Win32), the<br/>
+-# server will use that explicit path.  If the filenames do *not* begin<br/>
+-# with &quot;/&quot;, the value of ServerRoot is prepended -- so &quot;logs/foo.log&quot;<br/>
+-# with ServerRoot set to &quot;/etc/httpd&quot; will be interpreted by the<br/>
+-# server as &quot;/etc/httpd/logs/foo.log&quot;.<br/>
+-#<br/>
++# TLH Development Environment Apache Config. Written by Brian Hartvigsen.<br/>
++# Individual site configs are under conf.d/sites.conf.<br/>
+<br/>
+-### Section 1: Global Environment<br/>
+-#<br/>
+-# The directives in this section affect the overall operation of Apache,<br/>
+-# such as the number of concurrent requests it can handle or where it<br/>
+-# can find its configuration files.<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# Don&apos;t give away too much information about all the subcomponents<br/>
+-# we are running.  Comment out this line if you don&apos;t mind remote sites<br/>
+-# finding out what major optional modules you are running<br/>
+ServerTokens OS<br/>
+-<br/>
+-#<br/>
+-# ServerRoot: The top of the directory tree under which the server&apos;s<br/>
+-# configuration, error, and log files are kept.<br/>
+-#<br/>
+-# NOTE!  If you intend to place this on an NFS (or otherwise network)<br/>
+-# mounted filesystem then please read the LockFile documentation<br/>
+-# (available at &lt;URL:http://httpd.apache.org/docs/2.2/mod/mpm_common.html#lockfile&gt;);<br/>
+-# you will save yourself a lot of trouble.<br/>
+-#<br/>
+-# Do NOT add a slash at the end of the directory path.<br/>
+-#<br/>
+ServerRoot &quot;/etc/httpd&quot;<br/>
+-<br/>
+-#<br/>
+-# PidFile: The file in which the server should record its process<br/>
+-# identification number when it starts.  Note the PIDFILE variable in<br/>
+-# /etc/sysconfig/httpd must be set appropriately if this location is<br/>
+-# changed.<br/>
+-#<br/>
+PidFile run/httpd.pid<br/>
+-<br/>
+-#<br/>
+-# Timeout: The number of seconds before receives and sends time out.<br/>
+-#<br/>
+Timeout 60<br/>
+-<br/>
+-#<br/>
+-# KeepAlive: Whether or not to allow persistent connections (more than<br/>
+-# one request per connection). Set to &quot;Off&quot; to deactivate.<br/>
+-#<br/>
+KeepAlive Off<br/>
+-<br/>
+-#<br/>
+-# MaxKeepAliveRequests: The maximum number of requests to allow<br/>
+-# during a persistent connection. Set to 0 to allow an unlimited amount.<br/>
+-# We recommend you leave this number high, for maximum performance.<br/>
+-#<br/>
+MaxKeepAliveRequests 100<br/>
+-<br/>
+-#<br/>
+-# KeepAliveTimeout: Number of seconds to wait for the next request from the<br/>
+-# same client on the same connection.<br/>
+-#<br/>
+KeepAliveTimeout 15<br/>
+-<br/>
+-##<br/>
+-## Server-Pool Size Regulation (MPM specific)<br/>
+-##<br/>
+-<br/>
+-# prefork MPM<br/>
+-# StartServers: number of server processes to start<br/>
+-# MinSpareServers: minimum number of server processes which are kept spare<br/>
+-# MaxSpareServers: maximum number of server processes which are kept spare<br/>
+-# ServerLimit: maximum value for MaxClients for the lifetime of the server<br/>
+-# MaxClients: maximum number of server processes allowed to start<br/>
+-# MaxRequestsPerChild: maximum number of requests a server process serves<br/>
+&lt;IfModule prefork.c&gt;<br/>
+-StartServers       8<br/>
+-MinSpareServers    5<br/>
+-MaxSpareServers   20<br/>
+-ServerLimit      256<br/>
+-MaxClients       256<br/>
+-MaxRequestsPerChild  4000<br/>
++    StartServers       4<br/>
++    MinSpareServers    2<br/>
++    MaxSpareServers   10<br/>
++    ServerLimit      256<br/>
++    MaxClients       256<br/>
++    MaxRequestsPerChild  4000<br/>
+&lt;/IfModule&gt;<br/>
+-<br/>
+-# worker MPM<br/>
+-# StartServers: initial number of server processes to start<br/>
+-# MaxClients: maximum number of simultaneous client connections<br/>
+-# MinSpareThreads: minimum number of worker threads which are kept spare<br/>
+-# MaxSpareThreads: maximum number of worker threads which are kept spare<br/>
+-# ThreadsPerChild: constant number of worker threads in each server process<br/>
+-# MaxRequestsPerChild: maximum number of requests a server process serves<br/>
+&lt;IfModule worker.c&gt;<br/>
+-StartServers         4<br/>
+-MaxClients         300<br/>
+-MinSpareThreads     25<br/>
+-MaxSpareThreads     75<br/>
+-ThreadsPerChild     25<br/>
+-MaxRequestsPerChild  0<br/>
++    StartServers         4<br/>
++    MaxClients         300<br/>
++    MinSpareThreads     25<br/>
++    MaxSpareThreads     75<br/>
++    ThreadsPerChild     25<br/>
++    MaxRequestsPerChild  0<br/>
+&lt;/IfModule&gt;<br/>
+-<br/>
+-#<br/>
+-# Listen: Allows you to bind Apache to specific IP addresses and/or<br/>
+-# ports, in addition to the default. See also the &lt;VirtualHost&gt;<br/>
+-# directive.<br/>
+-#<br/>
+-# Change this to Listen on specific IP addresses as shown below to<br/>
+-# prevent Apache from glomming onto all bound IP addresses (0.0.0.0)<br/>
+-#<br/>
+-#Listen 12.34.56.78:80<br/>
++# Looking for Listen 443? It&apos;s under ssl.conf.<br/>
+Listen 80<br/>
+-<br/>
+-#<br/>
+-# Dynamic Shared Object (DSO) Support<br/>
+-#<br/>
+-# To be able to use the functionality of a module which was built as a DSO you<br/>
+-# have to place corresponding `LoadModule&apos; lines at this location so the<br/>
+-# directives contained in it are actually available _before_ they are used.<br/>
+-# Statically compiled modules (those listed by `httpd -l&apos;) do not need<br/>
+-# to be loaded here.<br/>
+-#<br/>
+-# Example:<br/>
+-# LoadModule foo_module modules/mod_foo.so<br/>
+-#<br/>
+LoadModule auth_basic_module modules/mod_auth_basic.so<br/>
+LoadModule auth_digest_module modules/mod_auth_digest.so<br/>
+LoadModule authn_file_module modules/mod_authn_file.so<br/>
+@@ -199,422 +78,66 @@<br/>
+LoadModule disk_cache_module modules/mod_disk_cache.so<br/>
+LoadModule cgi_module modules/mod_cgi.so<br/>
+LoadModule version_module modules/mod_version.so<br/>
+-<br/>
+-#<br/>
+-# The following modules are not loaded by default:<br/>
+-#<br/>
+-#LoadModule asis_module modules/mod_asis.so<br/>
+-#LoadModule authn_dbd_module modules/mod_authn_dbd.so<br/>
+-#LoadModule cern_meta_module modules/mod_cern_meta.so<br/>
+-#LoadModule cgid_module modules/mod_cgid.so<br/>
+-#LoadModule dbd_module modules/mod_dbd.so<br/>
+-#LoadModule dumpio_module modules/mod_dumpio.so<br/>
+-#LoadModule filter_module modules/mod_filter.so<br/>
+-#LoadModule ident_module modules/mod_ident.so<br/>
+-#LoadModule log_forensic_module modules/mod_log_forensic.so<br/>
+-#LoadModule unique_id_module modules/mod_unique_id.so<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# Load config files from the config directory &quot;/etc/httpd/conf.d&quot;.<br/>
+-#<br/>
+Include conf.d/*.conf<br/>
+-<br/>
+-#<br/>
+-# ExtendedStatus controls whether Apache will generate &quot;full&quot; status<br/>
+-# information (ExtendedStatus On) or just basic information (ExtendedStatus<br/>
+-# Off) when the &quot;server-status&quot; handler is called. The default is Off.<br/>
+-#<br/>
+-#ExtendedStatus On<br/>
+-<br/>
+-#<br/>
+-# If you wish httpd to run as a different user or group, you must run<br/>
+-# httpd as root initially and it will switch.<br/>
+-#<br/>
+-# User/Group: The name (or #number) of the user/group to run httpd as.<br/>
+-#  . On SCO (ODT 3) use &quot;User nouser&quot; and &quot;Group nogroup&quot;.<br/>
+-#  . On HPUX you may not be able to use shared memory as nobody, and the<br/>
+-#    suggested workaround is to create a user www and use that user.<br/>
+-#  NOTE that some kernels refuse to setgid(Group) or semctl(IPC_SET)<br/>
+-#  when the value of (unsigned)Group is above 60000;<br/>
+-#  don&apos;t use Group #-1 on these systems!<br/>
+-#<br/>
+User apache<br/>
+Group apache<br/>
+-<br/>
+-### Section 2: &apos;Main&apos; server configuration<br/>
+-#<br/>
+-# The directives in this section set up the values used by the &apos;main&apos;<br/>
+-# server, which responds to any requests that aren&apos;t handled by a<br/>
+-# &lt;VirtualHost&gt; definition.  These values also provide defaults for<br/>
+-# any &lt;VirtualHost&gt; containers you may define later in the file.<br/>
+-#<br/>
+-# All of these directives may appear inside &lt;VirtualHost&gt; containers,<br/>
+-# in which case these default settings will be overridden for the<br/>
+-# virtual host being defined.<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# ServerAdmin: Your address, where problems with the server should be<br/>
+-# e-mailed.  This address appears on some server-generated pages, such<br/>
+-# as error documents.  e.g. admin@your-domain.com<br/>
+-#<br/>
+-ServerAdmin root@localhost<br/>
+-<br/>
+-#<br/>
+-# ServerName gives the name and port that the server uses to identify itself.<br/>
+-# This can often be determined automatically, but we recommend you specify<br/>
+-# it explicitly to prevent problems during startup.<br/>
+-#<br/>
+-# If this is not set to valid DNS name for your host, server-generated<br/>
+-# redirections will not work.  See also the UseCanonicalName directive.<br/>
+-#<br/>
+-# If your host doesn&apos;t have a registered DNS name, enter its IP address here.<br/>
+-# You will have to access it by its address anyway, and this will make<br/>
+-# redirections work in a sensible way.<br/>
+-#<br/>
+-#ServerName www.example.com:80<br/>
+-<br/>
+-#<br/>
+-# UseCanonicalName: Determines how Apache constructs self-referencing<br/>
+-# URLs and the SERVER_NAME and SERVER_PORT variables.<br/>
+-# When set &quot;Off&quot;, Apache will use the Hostname and Port supplied<br/>
+-# by the client.  When set &quot;On&quot;, Apache will use the value of the<br/>
+-# ServerName directive.<br/>
+-#<br/>
++ServerAdmin devvm@development<br/>
+UseCanonicalName Off<br/>
+-<br/>
+-#<br/>
+-# DocumentRoot: The directory out of which you will serve your<br/>
+-# documents. By default, all requests are taken from this directory, but<br/>
+-# symbolic links and aliases may be used to point to other locations.<br/>
+-#<br/>
+-DocumentRoot &quot;/var/www/html&quot;<br/>
+-<br/>
+-#<br/>
+-# Each directory to which Apache has access can be configured with respect<br/>
+-# to which services and features are allowed and/or disabled in that<br/>
+-# directory (and its subdirectories).<br/>
+-#<br/>
+-# First, we configure the &quot;default&quot; to be a very restrictive set of<br/>
+-# features.<br/>
+-#<br/>
++DocumentRoot &quot;/www&quot;<br/>
+&lt;Directory /&gt;<br/>
+Options FollowSymLinks<br/>
+AllowOverride None<br/>
+&lt;/Directory&gt;<br/>
+-<br/>
+-#<br/>
+-# Note that from this point forward you must specifically allow<br/>
+-# particular features to be enabled - so if something&apos;s not working as<br/>
+-# you might expect, make sure that you have specifically enabled it<br/>
+-# below.<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# This should be changed to whatever you set DocumentRoot to.<br/>
+-#<br/>
+-&lt;Directory &quot;/var/www/html&quot;&gt;<br/>
+-<br/>
+-#<br/>
+-# Possible values for the Options directive are &quot;None&quot;, &quot;All&quot;,<br/>
+-# or any combination of:<br/>
+-#   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews<br/>
+-#<br/>
+-# Note that &quot;MultiViews&quot; must be named *explicitly* --- &quot;Options All&quot;<br/>
+-# doesn&apos;t give it to you.<br/>
+-#<br/>
+-# The Options directive is both complicated and important.  Please see<br/>
+-# http://httpd.apache.org/docs/2.2/mod/core.html#options<br/>
+-# for more information.<br/>
+-#<br/>
++&lt;Directory &quot;/www&quot;&gt;<br/>
+Options Indexes FollowSymLinks<br/>
+-<br/>
+-#<br/>
+-# AllowOverride controls what directives may be placed in .htaccess files.<br/>
+-# It can be &quot;All&quot;, &quot;None&quot;, or any combination of the keywords:<br/>
+-#   Options FileInfo AuthConfig Limit<br/>
+-#<br/>
+-    AllowOverride None<br/>
+-<br/>
+-#<br/>
+-# Controls who can get stuff from this server.<br/>
+-#<br/>
++    AllowOverride All<br/>
+Order allow,deny<br/>
+Allow from all<br/>
+-<br/>
+&lt;/Directory&gt;<br/>
+-<br/>
+-#<br/>
+-# UserDir: The name of the directory that is appended onto a user&apos;s home<br/>
+-# directory if a ~user request is received.<br/>
+-#<br/>
+-# The path to the end user account &apos;public_html&apos; directory must be<br/>
+-# accessible to the webserver userid.  This usually means that ~userid<br/>
+-# must have permissions of 711, ~userid/public_html must have permissions<br/>
+-# of 755, and documents contained therein must be world-readable.<br/>
+-# Otherwise, the client will only receive a &quot;403 Forbidden&quot; message.<br/>
+-#<br/>
+-# See also: http://httpd.apache.org/docs/misc/FAQ.html#forbidden<br/>
+-#<br/>
+&lt;IfModule mod_userdir.c&gt;<br/>
+-    #<br/>
+-    # UserDir is disabled by default since it can confirm the presence<br/>
+-    # of a username on the system (depending on home directory<br/>
+-    # permissions).<br/>
+-    #<br/>
+UserDir disabled<br/>
+-<br/>
+-    #<br/>
+-    # To enable requests to /~user/ to serve the user&apos;s public_html<br/>
+-    # directory, remove the &quot;UserDir disabled&quot; line above, and uncomment<br/>
+-    # the following line instead:<br/>
+-    #<br/>
+-    #UserDir public_html<br/>
+-<br/>
+&lt;/IfModule&gt;<br/>
+-<br/>
+-#<br/>
+-# Control access to UserDir directories.  The following is an example<br/>
+-# for a site where these directories are restricted to read-only.<br/>
+-#<br/>
+-#&lt;Directory /home/*/public_html&gt;<br/>
+-#    AllowOverride FileInfo AuthConfig Limit<br/>
+-#    Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec<br/>
+-#    &lt;Limit GET POST OPTIONS&gt;<br/>
+-#        Order allow,deny<br/>
+-#        Allow from all<br/>
+-#    &lt;/Limit&gt;<br/>
+-#    &lt;LimitExcept GET POST OPTIONS&gt;<br/>
+-#        Order deny,allow<br/>
+-#        Deny from all<br/>
+-#    &lt;/LimitExcept&gt;<br/>
+-#&lt;/Directory&gt;<br/>
+-<br/>
+-#<br/>
+-# DirectoryIndex: sets the file that Apache will serve if a directory<br/>
+-# is requested.<br/>
+-#<br/>
+-# The index.html.var file (a type-map) is used to deliver content-<br/>
+-# negotiated documents.  The MultiViews Option can be used for the<br/>
+-# same purpose, but it is much slower.<br/>
+-#<br/>
+DirectoryIndex index.html index.html.var<br/>
+-<br/>
+-#<br/>
+-# AccessFileName: The name of the file to look for in each directory<br/>
+-# for additional configuration directives.  See also the AllowOverride<br/>
+-# directive.<br/>
+-#<br/>
+AccessFileName .htaccess<br/>
+-<br/>
+-#<br/>
+-# The following lines prevent .htaccess and .htpasswd files from being<br/>
+-# viewed by Web clients.<br/>
+-#<br/>
+&lt;Files ~ &quot;^\.ht&quot;&gt;<br/>
+Order allow,deny<br/>
+Deny from all<br/>
+Satisfy All<br/>
+&lt;/Files&gt;<br/>
+-<br/>
+-#<br/>
+-# TypesConfig describes where the mime.types file (or equivalent) is<br/>
+-# to be found.<br/>
+-#<br/>
+TypesConfig /etc/mime.types<br/>
+-<br/>
+-#<br/>
+-# DefaultType is the default MIME type the server will use for a document<br/>
+-# if it cannot otherwise determine one, such as from filename extensions.<br/>
+-# If your server contains mostly text or HTML documents, &quot;text/plain&quot; is<br/>
+-# a good value.  If most of your content is binary, such as applications<br/>
+-# or images, you may want to use &quot;application/octet-stream&quot; instead to<br/>
+-# keep browsers from trying to display binary files as though they are<br/>
+-# text.<br/>
+-#<br/>
+DefaultType text/plain<br/>
+-<br/>
+-#<br/>
+-# The mod_mime_magic module allows the server to use various hints from the<br/>
+-# contents of the file itself to determine its type.  The MIMEMagicFile<br/>
+-# directive tells the module where the hint definitions are located.<br/>
+-#<br/>
+&lt;IfModule mod_mime_magic.c&gt;<br/>
+-#   MIMEMagicFile /usr/share/magic.mime<br/>
+MIMEMagicFile conf/magic<br/>
+&lt;/IfModule&gt;<br/>
+-<br/>
+-#<br/>
+-# HostnameLookups: Log the names of clients or just their IP addresses<br/>
+-# e.g., www.apache.org (on) or 204.62.129.132 (off).<br/>
+-# The default is off because it&apos;d be overall better for the net if people<br/>
+-# had to knowingly turn this feature on, since enabling it means that<br/>
+-# each client request will result in AT LEAST one lookup request to the<br/>
+-# nameserver.<br/>
+-#<br/>
+HostnameLookups Off<br/>
+-<br/>
+-#<br/>
+-# EnableMMAP: Control whether memory-mapping is used to deliver<br/>
+-# files (assuming that the underlying OS supports it).<br/>
+-# The default is on; turn this off if you serve from NFS-mounted<br/>
+-# filesystems.  On some systems, turning it off (regardless of<br/>
+-# filesystem) can improve performance; for details, please see<br/>
+-# http://httpd.apache.org/docs/2.2/mod/core.html#enablemmap<br/>
+-#<br/>
+-#EnableMMAP off<br/>
+-<br/>
+-#<br/>
+-# EnableSendfile: Control whether the sendfile kernel support is<br/>
+-# used to deliver files (assuming that the OS supports it).<br/>
+-# The default is on; turn this off if you serve from NFS-mounted<br/>
+-# filesystems.  Please see<br/>
+-# http://httpd.apache.org/docs/2.2/mod/core.html#enablesendfile<br/>
+-#<br/>
+-#EnableSendfile off<br/>
+-<br/>
+-#<br/>
+-# ErrorLog: The location of the error log file.<br/>
+-# If you do not specify an ErrorLog directive within a &lt;VirtualHost&gt;<br/>
+-# container, error messages relating to that virtual host will be<br/>
+-# logged here.  If you *do* define an error logfile for a &lt;VirtualHost&gt;<br/>
+-# container, that host&apos;s errors will be logged there and not here.<br/>
+-#<br/>
+ErrorLog logs/error_log<br/>
+-<br/>
+-#<br/>
+-# LogLevel: Control the number of messages logged to the error_log.<br/>
+-# Possible values include: debug, info, notice, warn, error, crit,<br/>
+-# alert, emerg.<br/>
+-#<br/>
+LogLevel warn<br/>
+-<br/>
+-#<br/>
+-# The following directives define some format nicknames for use with<br/>
+-# a CustomLog directive (see below).<br/>
+-#<br/>
+LogFormat &quot;%h %l %u %t \&quot;%r\&quot; %&gt;s %b \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot;&quot; combined<br/>
+LogFormat &quot;%h %l %u %t \&quot;%r\&quot; %&gt;s %b&quot; common<br/>
+LogFormat &quot;%{Referer}i -&gt; %U&quot; referer<br/>
+LogFormat &quot;%{User-agent}i&quot; agent<br/>
+-<br/>
+-# &quot;combinedio&quot; includes actual counts of actual bytes received (%I) and sent (%O); this<br/>
+-# requires the mod_logio module to be loaded.<br/>
+-#LogFormat &quot;%h %l %u %t \&quot;%r\&quot; %&gt;s %b \&quot;%{Referer}i\&quot; \&quot;%{User-Agent}i\&quot; %I %O&quot; combinedio<br/>
+-<br/>
+-#<br/>
+-# The location and format of the access logfile (Common Logfile Format).<br/>
+-# If you do not define any access logfiles within a &lt;VirtualHost&gt;<br/>
+-# container, they will be logged here.  Contrariwise, if you *do*<br/>
+-# define per-&lt;VirtualHost&gt; access logfiles, transactions will be<br/>
+-# logged therein and *not* in this file.<br/>
+-#<br/>
+-#CustomLog logs/access_log common<br/>
+-<br/>
+-#<br/>
+-# If you would like to have separate agent and referer logfiles, uncomment<br/>
+-# the following directives.<br/>
+-#<br/>
+-#CustomLog logs/referer_log referer<br/>
+-#CustomLog logs/agent_log agent<br/>
+-<br/>
+-#<br/>
+-# For a single logfile with access, agent, and referer information<br/>
+-# (Combined Logfile Format), use the following directive:<br/>
+-#<br/>
+CustomLog logs/access_log combined<br/>
+-<br/>
+-#<br/>
+-# Optionally add a line containing the server version and virtual host<br/>
+-# name to server-generated pages (internal error documents, FTP directory<br/>
+-# listings, mod_status and mod_info output etc., but not CGI generated<br/>
+-# documents or custom error documents).<br/>
+-# Set to &quot;EMail&quot; to also include a mailto: link to the ServerAdmin.<br/>
+-# Set to one of:  On | Off | EMail<br/>
+-#<br/>
+ServerSignature On<br/>
+-<br/>
+-#<br/>
+-# Aliases: Add here as many aliases as you need (with no limit). The format is<br/>
+-# Alias fakename realname<br/>
+-#<br/>
+-# Note that if you include a trailing / on fakename then the server will<br/>
+-# require it to be present in the URL.  So &quot;/icons&quot; isn&apos;t aliased in this<br/>
+-# example, only &quot;/icons/&quot;.  If the fakename is slash-terminated, then the<br/>
+-# realname must also be slash terminated, and if the fakename omits the<br/>
+-# trailing slash, the realname must also omit it.<br/>
+-#<br/>
+-# We include the /icons/ alias for FancyIndexed directory listings.  If you<br/>
+-# do not use FancyIndexing, you may comment this out.<br/>
+-#<br/>
+Alias /icons/ &quot;/var/www/icons/&quot;<br/>
+-<br/>
+&lt;Directory &quot;/var/www/icons&quot;&gt;<br/>
+Options Indexes MultiViews FollowSymLinks<br/>
+AllowOverride None<br/>
+Order allow,deny<br/>
+Allow from all<br/>
+&lt;/Directory&gt;<br/>
+-<br/>
+-#<br/>
+-# WebDAV module configuration section.<br/>
+-#<br/>
+-&lt;IfModule mod_dav_fs.c&gt;<br/>
+-    # Location of the WebDAV lock database.<br/>
+-    DAVLockDB /var/lib/dav/lockdb<br/>
+-&lt;/IfModule&gt;<br/>
+-<br/>
+-#<br/>
+-# ScriptAlias: This controls which directories contain server scripts.<br/>
+-# ScriptAliases are essentially the same as Aliases, except that<br/>
+-# documents in the realname directory are treated as applications and<br/>
+-# run by the server when requested rather than as documents sent to the client.<br/>
+-# The same rules about trailing &quot;/&quot; apply to ScriptAlias directives as to<br/>
+-# Alias.<br/>
+-#<br/>
+ScriptAlias /cgi-bin/ &quot;/var/www/cgi-bin/&quot;<br/>
+-<br/>
+-#<br/>
+-# &quot;/var/www/cgi-bin&quot; should be changed to whatever your ScriptAliased<br/>
+-# CGI directory exists, if you have that configured.<br/>
+-#<br/>
+&lt;Directory &quot;/var/www/cgi-bin&quot;&gt;<br/>
+AllowOverride None<br/>
+Options None<br/>
+Order allow,deny<br/>
+Allow from all<br/>
+&lt;/Directory&gt;<br/>
+-<br/>
+-#<br/>
+-# Redirect allows you to tell clients about documents which used to exist in<br/>
+-# your server&apos;s namespace, but do not anymore. This allows you to tell the<br/>
+-# clients where to look for the relocated document.<br/>
+-# Example:<br/>
+-# Redirect permanent /foo http://www.example.com/bar<br/>
+-<br/>
+-#<br/>
+-# Directives controlling the display of server-generated directory listings.<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# IndexOptions: Controls the appearance of server-generated directory<br/>
+-# listings.<br/>
+-#<br/>
+IndexOptions FancyIndexing VersionSort NameWidth=* HTMLTable Charset=UTF-8<br/>
+-<br/>
+-#<br/>
+-# AddIcon* directives tell the server which icon to show for different<br/>
+-# files or filename extensions.  These are only displayed for<br/>
+-# FancyIndexed directories.<br/>
+-#<br/>
+AddIconByEncoding (CMP,/icons/compressed.gif) x-compress x-gzip<br/>
+-<br/>
+AddIconByType (TXT,/icons/text.gif) text/*<br/>
+AddIconByType (IMG,/icons/image2.gif) image/*<br/>
+AddIconByType (SND,/icons/sound2.gif) audio/*<br/>
+AddIconByType (VID,/icons/movie.gif) video/*<br/>
+-<br/>
+AddIcon /icons/binary.gif .bin .exe<br/>
+AddIcon /icons/binhex.gif .hqx<br/>
+AddIcon /icons/tar.gif .tar<br/>
+@@ -631,81 +154,14 @@<br/>
+AddIcon /icons/script.gif .conf .sh .shar .csh .ksh .tcl<br/>
+AddIcon /icons/tex.gif .tex<br/>
+AddIcon /icons/bomb.gif core<br/>
+-<br/>
+AddIcon /icons/back.gif ..<br/>
+AddIcon /icons/hand.right.gif README<br/>
+AddIcon /icons/folder.gif ^^DIRECTORY^^<br/>
+AddIcon /icons/blank.gif ^^BLANKICON^^<br/>
+-<br/>
+-#<br/>
+-# DefaultIcon is which icon to show for files which do not have an icon<br/>
+-# explicitly set.<br/>
+-#<br/>
+DefaultIcon /icons/unknown.gif<br/>
+-<br/>
+-#<br/>
+-# AddDescription allows you to place a short description after a file in<br/>
+-# server-generated indexes.  These are only displayed for FancyIndexed<br/>
+-# directories.<br/>
+-# Format: AddDescription &quot;description&quot; filename<br/>
+-#<br/>
+-#AddDescription &quot;GZIP compressed document&quot; .gz<br/>
+-#AddDescription &quot;tar archive&quot; .tar<br/>
+-#AddDescription &quot;GZIP compressed tar archive&quot; .tgz<br/>
+-<br/>
+-#<br/>
+-# ReadmeName is the name of the README file the server will look for by<br/>
+-# default, and append to directory listings.<br/>
+-#<br/>
+-# HeaderName is the name of a file which should be prepended to<br/>
+-# directory indexes.<br/>
+ReadmeName README.html<br/>
+HeaderName HEADER.html<br/>
+-<br/>
+-#<br/>
+-# IndexIgnore is a set of filenames which directory indexing should ignore<br/>
+-# and not include in the listing.  Shell-style wildcarding is permitted.<br/>
+-#<br/>
+IndexIgnore .??* *~ *# HEADER* README* RCS CVS *,v *,t<br/>
+-<br/>
+-#<br/>
+-# DefaultLanguage and AddLanguage allows you to specify the language of<br/>
+-# a document. You can then use content negotiation to give a browser a<br/>
+-# file in a language the user can understand.<br/>
+-#<br/>
+-# Specify a default language. This means that all data<br/>
+-# going out without a specific language tag (see below) will<br/>
+-# be marked with this one. You probably do NOT want to set<br/>
+-# this unless you are sure it is correct for all cases.<br/>
+-#<br/>
+-# * It is generally better to not mark a page as<br/>
+-# * being a certain language than marking it with the wrong<br/>
+-# * language!<br/>
+-#<br/>
+-# DefaultLanguage nl<br/>
+-#<br/>
+-# Note 1: The suffix does not have to be the same as the language<br/>
+-# keyword --- those with documents in Polish (whose net-standard<br/>
+-# language code is pl) may wish to use &quot;AddLanguage pl .po&quot; to<br/>
+-# avoid the ambiguity with the common suffix for perl scripts.<br/>
+-#<br/>
+-# Note 2: The example entries below illustrate that in some cases<br/>
+-# the two character &apos;Language&apos; abbreviation is not identical to<br/>
+-# the two character &apos;Country&apos; code for its country,<br/>
+-# E.g. &apos;Danmark/dk&apos; versus &apos;Danish/da&apos;.<br/>
+-#<br/>
+-# Note 3: In the case of &apos;ltz&apos; we violate the RFC by using a three char<br/>
+-# specifier. There is &apos;work in progress&apos; to fix this and get<br/>
+-# the reference data for rfc1766 cleaned up.<br/>
+-#<br/>
+-# Catalan (ca) - Croatian (hr) - Czech (cs) - Danish (da) - Dutch (nl)<br/>
+-# English (en) - Esperanto (eo) - Estonian (et) - French (fr) - German (de)<br/>
+-# Greek-Modern (el) - Hebrew (he) - Italian (it) - Japanese (ja)<br/>
+-# Korean (ko) - Luxembourgeois* (ltz) - Norwegian Nynorsk (nn)<br/>
+-# Norwegian (no) - Polish (pl) - Portugese (pt)<br/>
+-# Brazilian Portuguese (pt-BR) - Russian (ru) - Swedish (sv)<br/>
+-# Simplified Chinese (zh-CN) - Spanish (es) - Traditional Chinese (zh-TW)<br/>
+-#<br/>
+AddLanguage ca .ca<br/>
+AddLanguage cs .cz .cs<br/>
+AddLanguage da .dk<br/>
+@@ -732,179 +188,36 @@<br/>
+AddLanguage sv .sv<br/>
+AddLanguage zh-CN .zh-cn<br/>
+AddLanguage zh-TW .zh-tw<br/>
+-<br/>
+-#<br/>
+-# LanguagePriority allows you to give precedence to some languages<br/>
+-# in case of a tie during content negotiation.<br/>
+-#<br/>
+-# Just list the languages in decreasing order of preference. We have<br/>
+-# more or less alphabetized them here. You probably want to change this.<br/>
+-#<br/>
+LanguagePriority en ca cs da de el eo es et fr he hr it ja ko ltz nl nn no pl pt pt-BR ru sv zh-CN zh-TW<br/>
+-<br/>
+-#<br/>
+-# ForceLanguagePriority allows you to serve a result page rather than<br/>
+-# MULTIPLE CHOICES (Prefer) [in case of a tie] or NOT ACCEPTABLE (Fallback)<br/>
+-# [in case no accepted languages matched the available variants]<br/>
+-#<br/>
+ForceLanguagePriority Prefer Fallback<br/>
+-<br/>
+-#<br/>
+-# Specify a default charset for all content served; this enables<br/>
+-# interpretation of all content as UTF-8 by default.  To use the<br/>
+-# default browser choice (ISO-8859-1), or to allow the META tags<br/>
+-# in HTML content to override this choice, comment out this<br/>
+-# directive:<br/>
+-#<br/>
+AddDefaultCharset UTF-8<br/>
+-<br/>
+-#<br/>
+-# AddType allows you to add to or override the MIME configuration<br/>
+-# file mime.types for specific file types.<br/>
+-#<br/>
+-#AddType application/x-tar .tgz<br/>
+-<br/>
+-#<br/>
+-# AddEncoding allows you to have certain browsers uncompress<br/>
+-# information on the fly. Note: Not all browsers support this.<br/>
+-# Despite the name similarity, the following Add* directives have nothing<br/>
+-# to do with the FancyIndexing customization directives above.<br/>
+-#<br/>
+-#AddEncoding x-compress .Z<br/>
+-#AddEncoding x-gzip .gz .tgz<br/>
+-<br/>
+-# If the AddEncoding directives above are commented-out, then you<br/>
+-# probably should define those extensions to indicate media types:<br/>
+-#<br/>
+AddType application/x-compress .Z<br/>
+AddType application/x-gzip .gz .tgz<br/>
+-<br/>
+-#<br/>
+-#   MIME-types for downloading Certificates and CRLs<br/>
+-#<br/>
+AddType application/x-x509-ca-cert .crt<br/>
+AddType application/x-pkcs7-crl    .crl<br/>
+-<br/>
+-#<br/>
+-# AddHandler allows you to map certain file extensions to &quot;handlers&quot;:<br/>
+-# actions unrelated to filetype. These can be either built into the server<br/>
+-# or added with the Action directive (see below)<br/>
+-#<br/>
+-# To use CGI scripts outside of ScriptAliased directories:<br/>
+-# (You will also need to add &quot;ExecCGI&quot; to the &quot;Options&quot; directive.)<br/>
+-#<br/>
+-#AddHandler cgi-script .cgi<br/>
+-<br/>
+-#<br/>
+-# For files that include their own HTTP headers:<br/>
+-#<br/>
+-#AddHandler send-as-is asis<br/>
+-<br/>
+-#<br/>
+-# For type maps (negotiated resources):<br/>
+-# (This is enabled by default to allow the Apache &quot;It Worked&quot; page<br/>
+-#  to be distributed in multiple languages.)<br/>
+-#<br/>
+AddHandler type-map var<br/>
+-<br/>
+-#<br/>
+-# Filters allow you to process content before it is sent to the client.<br/>
+-#<br/>
+-# To parse .shtml files for server-side includes (SSI):<br/>
+-# (You will also need to add &quot;Includes&quot; to the &quot;Options&quot; directive.)<br/>
+-#<br/>
+AddType text/html .shtml<br/>
+AddOutputFilter INCLUDES .shtml<br/>
+-<br/>
+-#<br/>
+-# Action lets you define media types that will execute a script whenever<br/>
+-# a matching file is called. This eliminates the need for repeated URL<br/>
+-# pathnames for oft-used CGI file processors.<br/>
+-# Format: Action media/type /cgi-script/location<br/>
+-# Format: Action handler-name /cgi-script/location<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# Customizable error responses come in three flavors:<br/>
+-# 1) plain text 2) local redirects 3) external redirects<br/>
+-#<br/>
+-# Some examples:<br/>
+-#ErrorDocument 500 &quot;The server made a boo boo.&quot;<br/>
+-#ErrorDocument 404 /missing.html<br/>
+-#ErrorDocument 404 &quot;/cgi-bin/missing_handler.pl&quot;<br/>
+-#ErrorDocument 402 http://www.example.com/subscription_info.html<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# Putting this all together, we can internationalize error responses.<br/>
+-#<br/>
+-# We use Alias to redirect any /error/HTTP_&lt;error&gt;.html.var response to<br/>
+-# our collection of by-error message multi-language collections.  We use<br/>
+-# includes to substitute the appropriate text.<br/>
+-#<br/>
+-# You can modify the messages&apos; appearance without changing any of the<br/>
+-# default HTTP_&lt;error&gt;.html.var files by adding the line:<br/>
+-#<br/>
+-#   Alias /error/include/ &quot;/your/include/path/&quot;<br/>
+-#<br/>
+-# which allows you to create your own set of files by starting with the<br/>
+-# /var/www/error/include/ files and<br/>
+-# copying them to /your/include/path/, even on a per-VirtualHost basis.<br/>
+-#<br/>
+-<br/>
+Alias /error/ &quot;/var/www/error/&quot;<br/>
+-<br/>
+&lt;IfModule mod_negotiation.c&gt;<br/>
+-&lt;IfModule mod_include.c&gt;<br/>
+-    &lt;Directory &quot;/var/www/error&quot;&gt;<br/>
+-        AllowOverride None<br/>
+-        Options IncludesNoExec<br/>
+-        AddOutputFilter Includes html<br/>
+-        AddHandler type-map var<br/>
+-        Order allow,deny<br/>
+-        Allow from all<br/>
+-        LanguagePriority en es de fr<br/>
+-        ForceLanguagePriority Prefer Fallback<br/>
+-    &lt;/Directory&gt;<br/>
+-<br/>
+-#    ErrorDocument 400 /error/HTTP_BAD_REQUEST.html.var<br/>
+-#    ErrorDocument 401 /error/HTTP_UNAUTHORIZED.html.var<br/>
+-#    ErrorDocument 403 /error/HTTP_FORBIDDEN.html.var<br/>
+-#    ErrorDocument 404 /error/HTTP_NOT_FOUND.html.var<br/>
+-#    ErrorDocument 405 /error/HTTP_METHOD_NOT_ALLOWED.html.var<br/>
+-#    ErrorDocument 408 /error/HTTP_REQUEST_TIME_OUT.html.var<br/>
+-#    ErrorDocument 410 /error/HTTP_GONE.html.var<br/>
+-#    ErrorDocument 411 /error/HTTP_LENGTH_REQUIRED.html.var<br/>
+-#    ErrorDocument 412 /error/HTTP_PRECONDITION_FAILED.html.var<br/>
+-#    ErrorDocument 413 /error/HTTP_REQUEST_ENTITY_TOO_LARGE.html.var<br/>
+-#    ErrorDocument 414 /error/HTTP_REQUEST_URI_TOO_LARGE.html.var<br/>
+-#    ErrorDocument 415 /error/HTTP_UNSUPPORTED_MEDIA_TYPE.html.var<br/>
+-#    ErrorDocument 500 /error/HTTP_INTERNAL_SERVER_ERROR.html.var<br/>
+-#    ErrorDocument 501 /error/HTTP_NOT_IMPLEMENTED.html.var<br/>
+-#    ErrorDocument 502 /error/HTTP_BAD_GATEWAY.html.var<br/>
+-#    ErrorDocument 503 /error/HTTP_SERVICE_UNAVAILABLE.html.var<br/>
+-#    ErrorDocument 506 /error/HTTP_VARIANT_ALSO_VARIES.html.var<br/>
+-<br/>
++    &lt;IfModule mod_include.c&gt;<br/>
++        &lt;Directory &quot;/var/www/error&quot;&gt;<br/>
++            AllowOverride None<br/>
++            Options IncludesNoExec<br/>
++            AddOutputFilter Includes html<br/>
++            AddHandler type-map var<br/>
++            Order allow,deny<br/>
++            Allow from all<br/>
++            LanguagePriority en es de fr<br/>
++            ForceLanguagePriority Prefer Fallback<br/>
++        &lt;/Directory&gt;<br/>
++    &lt;/IfModule&gt;<br/>
+&lt;/IfModule&gt;<br/>
+-&lt;/IfModule&gt;<br/>
+-<br/>
+-#<br/>
+-# The following directives modify normal HTTP response behavior to<br/>
+-# handle known problems with browser implementations.<br/>
+-#<br/>
+BrowserMatch &quot;Mozilla/2&quot; nokeepalive<br/>
+BrowserMatch &quot;MSIE 4\.0b2;&quot; nokeepalive downgrade-1.0 force-response-1.0<br/>
+BrowserMatch &quot;RealPlayer 4\.0&quot; force-response-1.0<br/>
+BrowserMatch &quot;Java/1\.0&quot; force-response-1.0<br/>
+BrowserMatch &quot;JDK/1\.0&quot; force-response-1.0<br/>
+-<br/>
+-#<br/>
+-# The following directive disables redirects on non-GET requests for<br/>
+-# a directory that does not include the trailing slash.  This fixes a<br/>
+-# problem with Microsoft WebFolders which does not appropriately handle<br/>
+-# redirects for folders with DAV methods.<br/>
+-# Same deal with Apple&apos;s DAV filesystem and Gnome VFS support for DAV.<br/>
+-#<br/>
+BrowserMatch &quot;Microsoft Data Access Internet Publishing Provider&quot; redirect-carefully<br/>
+BrowserMatch &quot;MS FrontPage&quot; redirect-carefully<br/>
+BrowserMatch &quot;^WebDrive&quot; redirect-carefully<br/>
+@@ -912,98 +225,5 @@<br/>
+BrowserMatch &quot;^gnome-vfs/1.0&quot; redirect-carefully<br/>
+BrowserMatch &quot;^XML Spy&quot; redirect-carefully<br/>
+BrowserMatch &quot;^Dreamweaver-WebDAV-SCM1&quot; redirect-carefully<br/>
+-<br/>
+-#<br/>
+-# Allow server status reports generated by mod_status,<br/>
+-# with the URL of http://servername/server-status<br/>
+-# Change the &quot;.example.com&quot; to match your domain to enable.<br/>
+-#<br/>
+-#&lt;Location /server-status&gt;<br/>
+-#    SetHandler server-status<br/>
+-#    Order deny,allow<br/>
+-#    Deny from all<br/>
+-#    Allow from .example.com<br/>
+-#&lt;/Location&gt;<br/>
+-<br/>
+-#<br/>
+-# Allow remote server configuration reports, with the URL of<br/>
+-#  http://servername/server-info (requires that mod_info.c be loaded).<br/>
+-# Change the &quot;.example.com&quot; to match your domain to enable.<br/>
+-#<br/>
+-#&lt;Location /server-info&gt;<br/>
+-#    SetHandler server-info<br/>
+-#    Order deny,allow<br/>
+-#    Deny from all<br/>
+-#    Allow from .example.com<br/>
+-#&lt;/Location&gt;<br/>
+-<br/>
+-#<br/>
+-# Proxy Server directives. Uncomment the following lines to<br/>
+-# enable the proxy server:<br/>
+-#<br/>
+-#&lt;IfModule mod_proxy.c&gt;<br/>
+-#ProxyRequests On<br/>
+-#<br/>
+-#&lt;Proxy *&gt;<br/>
+-#    Order deny,allow<br/>
+-#    Deny from all<br/>
+-#    Allow from .example.com<br/>
+-#&lt;/Proxy&gt;<br/>
+-<br/>
+-#<br/>
+-# Enable/disable the handling of HTTP/1.1 &quot;Via:&quot; headers.<br/>
+-# (&quot;Full&quot; adds the server version; &quot;Block&quot; removes all outgoing Via: headers)<br/>
+-# Set to one of: Off | On | Full | Block<br/>
+-#<br/>
+-#ProxyVia On<br/>
+-<br/>
+-#<br/>
+-# To enable a cache of proxied content, uncomment the following lines.<br/>
+-# See http://httpd.apache.org/docs/2.2/mod/mod_cache.html for more details.<br/>
+-#<br/>
+-#&lt;IfModule mod_disk_cache.c&gt;<br/>
+-#   CacheEnable disk /<br/>
+-#   CacheRoot &quot;/var/cache/mod_proxy&quot;<br/>
+-#&lt;/IfModule&gt;<br/>
+-#<br/>
+-<br/>
+-#&lt;/IfModule&gt;<br/>
+-# End of proxy directives.<br/>
+-<br/>
+-### Section 3: Virtual Hosts<br/>
+-#<br/>
+-# VirtualHost: If you want to maintain multiple domains/hostnames on your<br/>
+-# machine you can setup VirtualHost containers for them. Most configurations<br/>
+-# use only name-based virtual hosts so the server doesn&apos;t need to worry about<br/>
+-# IP addresses. This is indicated by the asterisks in the directives below.<br/>
+-#<br/>
+-# Please see the documentation at<br/>
+-# &lt;URL:http://httpd.apache.org/docs/2.2/vhosts/&gt;<br/>
+-# for further details before you try to setup virtual hosts.<br/>
+-#<br/>
+-# You may use the command line option &apos;-S&apos; to verify your virtual host<br/>
+-# configuration.<br/>
+-<br/>
+-#<br/>
+-# Use name-based virtual hosting.<br/>
+-#<br/>
+-#NameVirtualHost *:80<br/>
+-#<br/>
+-# NOTE: NameVirtualHost cannot be used without a port specifier<br/>
+-# (e.g. :80) if mod_ssl is being used, due to the nature of the<br/>
+-# SSL protocol.<br/>
+-#<br/>
+-<br/>
+-#<br/>
+-# VirtualHost example:<br/>
+-# Almost any Apache directive may go into a VirtualHost container.<br/>
+-# The first VirtualHost section is used for requests without a known<br/>
+-# server name.<br/>
+-#<br/>
+-#&lt;VirtualHost *:80&gt;<br/>
+-#    ServerAdmin webmaster@dummy-host.example.com<br/>
+-#    DocumentRoot /www/docs/dummy-host.example.com<br/>
+-#    ServerName dummy-host.example.com<br/>
+-#    ErrorLog logs/dummy-host.example.com-error_log<br/>
+-#    CustomLog logs/dummy-host.example.com-access_log common<br/>
+-#&lt;/VirtualHost&gt;<br/>
++NameVirtualHost *:80<br/>
++NameVirtualHost *:443<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+LoadModule auth_basic_module modules/mod_auth_basic.so
+LoadModule auth_digest_module modules/mod_auth_digest.so
+LoadModule authn_file_module modules/mod_authn_file.so
+LoadModule authn_alias_module modules/mod_authn_alias.so
+LoadModule authn_anon_module modules/mod_authn_anon.so
+LoadModule authn_dbm_module modules/mod_authn_dbm.so
+LoadModule authn_default_module modules/mod_authn_default.so
+LoadModule authz_host_module modules/mod_authz_host.so
+LoadModule authz_user_module modules/mod_authz_user.so
+LoadModule authz_owner_module modules/mod_authz_owner.so
+LoadModule authz_groupfile_module modules/mod_authz_groupfile.so
+LoadModule authz_dbm_module modules/mod_authz_dbm.so
+LoadModule authz_default_module modules/mod_authz_default.so
+LoadModule ldap_module modules/mod_ldap.so
+LoadModule authnz_ldap_module modules/mod_authnz_ldap.so
+LoadModule include_module modules/mod_include.so
+LoadModule log_config_module modules/mod_log_config.so
+LoadModule logio_module modules/mod_logio.so
+LoadModule env_module modules/mod_env.so
+LoadModule ext_filter_module modules/mod_ext_filter.so
+LoadModule mime_magic_module modules/mod_mime_magic.so
+LoadModule expires_module modules/mod_expires.so
+LoadModule deflate_module modules/mod_deflate.so
+LoadModule headers_module modules/mod_headers.so
+LoadModule usertrack_module modules/mod_usertrack.so
+LoadModule setenvif_module modules/mod_setenvif.so
+LoadModule mime_module modules/mod_mime.so
+LoadModule dav_module modules/mod_dav.so
+LoadModule status_module modules/mod_status.so
+LoadModule autoindex_module modules/mod_autoindex.so
+LoadModule info_module modules/mod_info.so
+LoadModule dav_fs_module modules/mod_dav_fs.so
+LoadModule vhost_alias_module modules/mod_vhost_alias.so
+LoadModule negotiation_module modules/mod_negotiation.so
+LoadModule dir_module modules/mod_dir.so
+LoadModule actions_module modules/mod_actions.so
+LoadModule speling_module modules/mod_speling.so
+LoadModule userdir_module modules/mod_userdir.so
+LoadModule alias_module modules/mod_alias.so
+LoadModule substitute_module modules/mod_substitute.so
+LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_balancer_module modules/mod_proxy_balancer.so
+LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+LoadModule proxy_ajp_module modules/mod_proxy_ajp.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+LoadModule cache_module modules/mod_cache.so
+LoadModule suexec_module modules/mod_suexec.so
+LoadModule disk_cache_module modules/mod_disk_cache.so
+LoadModule cgi_module modules/mod_cgi.so
+LoadModule version_module modules/mod_version.so
+LoadModule actions_module modules/mod_actions.so
+LoadModule alias_module modules/mod_alias.so
+LoadModule auth_basic_module modules/mod_auth_basic.so
+LoadModule auth_digest_module modules/mod_auth_digest.so
+LoadModule authn_anon_module modules/mod_authn_anon.so
+LoadModule authn_dbm_module modules/mod_authn_dbm.so
+LoadModule authn_file_module modules/mod_authn_file.so
+LoadModule authz_dbm_module modules/mod_authz_dbm.so
+LoadModule authz_groupfile_module modules/mod_authz_groupfile.so
+LoadModule authz_host_module modules/mod_authz_host.so
+LoadModule authz_owner_module modules/mod_authz_owner.so
+LoadModule authz_user_module modules/mod_authz_user.so
+LoadModule autoindex_module modules/mod_autoindex.so
+LoadModule cache_module modules/mod_cache.so
+LoadModule deflate_module modules/mod_deflate.so
+LoadModule dir_module modules/mod_dir.so
+LoadModule env_module modules/mod_env.so
+LoadModule expires_module modules/mod_expires.so
+LoadModule ext_filter_module modules/mod_ext_filter.so
+LoadModule headers_module modules/mod_headers.so
+LoadModule include_module modules/mod_include.so
+LoadModule info_module modules/mod_info.so
+LoadModule log_config_module modules/mod_log_config.so
+LoadModule logio_module modules/mod_logio.so
+LoadModule mime_magic_module modules/mod_mime_magic.so
+LoadModule mime_module modules/mod_mime.so
+LoadModule negotiation_module modules/mod_negotiation.so
+LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule setenvif_module modules/mod_setenvif.so
+LoadModule status_module modules/mod_status.so
+LoadModule substitute_module modules/mod_substitute.so
+LoadModule suexec_module modules/mod_suexec.so
+LoadModule userdir_module modules/mod_userdir.so
+LoadModule version_module modules/mod_version.so
+LoadModule vhost_alias_module modules/mod_vhost_alias.so
+LoadModule dav_module modules/mod_dav.so
+LoadModule dav_fs_module modules/mod_dav_fs.so
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_ajp_module modules/mod_proxy_ajp.so
+LoadModule proxy_balancer_module modules/mod_proxy_balancer.so
+LoadModule proxy_connect_module modules/mod_proxy_connect.so
+LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+LoadModule disk_cache_module modules/mod_disk_cache.so
+LoadModule cgi_module modules/mod_cgi.so
+LoadModule ldap_module modules/mod_ldap.so
+LoadModule authnz_ldap_module modules/mod_authnz_ldap.so
+LoadModule speling_module modules/mod_speling.so
+LoadModule usertrack_module modules/mod_usertrack.so
+LoadModule authn_alias_module modules/mod_authn_alias.so
+LoadModule authn_default_module modules/mod_authn_default.so
+LoadModule authz_default_module modules/mod_authz_default.so
+LoadModule ldap_module modules/mod_ldap.so
+LoadModule speling_module modules/mod_speling.so
+LoadModule usertrack_module modules/mod_usertrack.so
+/etc/httpd//conf/httpd.conf:    Order allow,deny
+/etc/httpd//conf/httpd.conf:    Order allow,deny
+/etc/httpd//conf/httpd.conf:    Order allow,deny
+/etc/httpd//conf/httpd.conf:    Order allow,deny
+/etc/httpd//conf/httpd.conf:            Order allow,deny
+/etc/httpd//conf.d/perl.conf:#    Order deny,allow
+/etc/httpd//conf.d/sites.conf:    Order allow,deny
+/etc/httpd//conf.d/perl.conf:LoadModule perl_module modules/mod_perl.so
+/etc/httpd//conf.d/ssl.conf:SSLMutex default
+/etc/httpd//conf.d/ssl.conf:SSLPassPhraseDialog  builtin
+/etc/httpd//conf.d/ssl.conf:SSLSessionCache         shmcb:/var/cache/mod_ssl/scache(512000)
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7098784">
+            <h3>Result for NTP configuration</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_ntp_configuration_ntp</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Save ntp and ntpdate configuration files which are not tracked by rpm.
+        
+        </p>
+            <p>
+            File(s) affected:
+            <ul class="itemizedlist"><li><p>/etc/ntp.conf</p></li><li><p>/etc/ntp/step-tickers</p></li></ul></p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7105216">
+            <h3>Result for Information on time-sync.target</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_ntp_timesync_timesync</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Check if ntpdate service is enabled and print information on starting services with clock set
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7118832">
+            <h3>Result for OpenSSH sshd_config migration content</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_openssh_sshd_openssh-sshd</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        This content has a aim to convert /etc/ssh/sshd_config file from openssh-server package
+        
+        </p>
+            <p>
+            File(s) affected:
+            <ul class="itemizedlist"><li><p>/etc/ssh/sshd_config</p></li></ul></p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7125296">
+            <h3>Result for OpenSSH sysconfig migration content</h3>
+            <p class="result-fixed">Result: <strong class="strong">fixed</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_services_openssh_sysconfig_openssh-sysconfig</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        This content has a aim to convert /etc/sysconfig/sshd file from openssh-server package
+        
+        </p>
+            <p>
+            File(s) affected:
+            <ul class="itemizedlist"><li><p>/etc/sysconfig/sshd</p></li></ul></p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              /etc/sysconfig/sshd will not be a shell script in CentOS 7 anymore so all &apos;export VARIABLE=VALUE&apos; has to be changed to &apos;VARIABLE=VALUE&apos;.<br/>
+<br/>
+# sed -i &apos;s/^export //&apos; /etc/sysconfig/sshd<br/>
+<br/>
+There is the /root/preupgrade/cleanconf//etc/sysconfig/sshd with the fixed configuration.<br/>
+<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7168640">
+            <h3>Result for State of LVM2 services.</h3>
+            <p class="result-fixed">Result: <strong class="strong">fixed</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_storage_lvm2-services_check_lvm2_services</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        Some services are important for proper LVM functionality. This content checks for current state of existing services and makes sure the state is preserved over upgrade. Also, some systemd units should be enabled by default to allow for service's on-demand activation if needed.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              CentOS7 uses systemd for service management. When upgrading from CentOS6,<br/>
+we need to be sure that certain services (systemd units) are enabled<br/>
+or prepared for on-demand activation.<br/>
+<br/>
+The LVM2 monitoring service inherits the old state, which means that if<br/>
+the &apos;lvm2-monitor&apos; service was enabled in CentOS6, it will also be enabled<br/>
+in CentOS7 (lvm2-monitor.service) and vice versa.<br/>
+<br/>
+In addition to that these systemd units are enabled to allow for on-demand<br/>
+service activation:<br/>
+dm-event.socket<br/>
+lvm2-lvmetad.socket<br/>
+<br/>
+The dm-event.socket is used for on-demand activation of dm-event.service.<br/>
+This is an essential part of device-mapper monitoring feature (which also<br/>
+covers monitoring of LVM devices).<br/>
+<br/>
+The lvm2-lvmetad.socket is used for on-demand activation of lvm2-lvmetad.service<br/>
+which starts the lvmetad - LVM metadata daemon that is used to cache LVM<br/>
+metadata so LVM commands don&apos;t need to scan devices all the time and they<br/>
+can reuse cached metadata. This functionality is used by default in CentOS7.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7206448">
+            <h3>Result for Architecture Support</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_Architecture_architecture</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:50:36" class="date">2015-01-06 13:50</abbr></strong></p>
+            <p>
+        CentOS 7 does not support installations on 32-bit architectures, and performing an in-place upgrade is not possible on 32-bit systems.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7212976">
+            <h3>Result for Binary rebuilds</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_BinariesRebuild_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:26" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Check all binaries installed on the assessment system which needs to be rebuilded on the target system
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              This content generates the list of binaries which needs to be rebuilt<br/>
+<br/>
+You can find the list at:<br/>
+<a href="./kickstart/binaries">kickstart/binaries</a><br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: SLIGHT: Some binaries untracked by RPM were discovered on the system and may need rebuild after upgrade.
+INPLACERISK: SLIGHT: Some scripts untracked by RPM were discovered on the system and may not work properly after upgrade.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7220336">
+            <h3>Result for Debuginfo packages</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_Debuginfo_debuginfo</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:26" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        This content checks for debuginfo packages and inform about potential risks for in-place upgrade.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7227488">
+            <h3>Result for Cluster and High Availability</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_HA-Cluster_ha-cluster_hacluster</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:26" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Content checks Cluster and High Availability solutions for upgrade.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7248368">
+            <h3>Result for File Systems, Partitions and Mounts Configuration Review</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_PartitionMounts_partmounts</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:26" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        This module describes the new default file system and stores the partitions and mounts configuration.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              CentOS 7 now uses the XFS file system as the default file system instead of the ext4 file system. If you intend to migrate the system to another machine or create a new file system, you can consider using XFS instead of ext4. Users who use a Kickstart installation can consider modifying the Kickstart configuration to use XFS.<br/>
+<br/>
+Additionally, information about the partitions and mounts configuration has been saved in the /root/preupgrade/kickstart/ directory. This information can be useful to users who choose to perform a system migration or convert their file systems to XFS.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7254832">
+            <h3>Result for Read Only FHS directories</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_ReadOnlyFHS_check_script</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:26" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Check that critical directories of Filesystem Hierarchy Standard are not mounted read-only.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7263808">
+            <h3>Result for Sonamebumped libs</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_SonameBump_SonameBump</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:28" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        If the dynamic library breaks the API/ABI compatibility, it is supposed to change its soname. This content checks for the soname bumps between CentOS 6 and CentOS 7 in your CentOS packages.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Application developed in C may use dynamic libraries (.so files) to reuse the<br/>
+common functions/symbols in the binary. If the library bumped its soname (<br/>
+changed major version, API/ABI incompatibility), application that depends on<br/>
+it may not run.<br/>
+Some of the libraries changed the soname version between CentOS<br/>
+6 and CentOS 7.<br/>
+<br/>
+From your CentOS 6 packages, following libraries changed soname:<br/>
+<br/>
+libanonymous.so.2 from cyrus-sasl-lib changed to libanonymous.so.3<br/>
+libbind9.so.80 from bind-libs changed to libbind9.so.90<br/>
+libdialog.so.6 from dialog changed to libdialog.so.11<br/>
+libdns.so.81 from bind-libs changed to libdns.so.100<br/>
+libdrm_nouveau.so.1 from libdrm changed to libdrm_nouveau.so.2<br/>
+libffi.so.5 from libffi changed to libffi.so.6<br/>
+libgdbm.so.2 from gdbm changed to libgdbm.so.4<br/>
+libgmp.so.3 from gmp changed to libgmp.so.10<br/>
+libgnutls.so.26 from gnutls changed to libgnutls.so.28<br/>
+libgnutlsxx.so.26 from gnutls changed to libgnutlsxx.so.28<br/>
+libhistory.so.5 from compat-readline5 changed to libhistory.so.6<br/>
+libisc.so.83 from bind-libs changed to libisc.so.95<br/>
+libisccc.so.80 from bind-libs changed to libisccc.so.90<br/>
+libisccfg.so.82 from bind-libs changed to libisccfg.so.90<br/>
+libkdb5.so.6 from krb5-libs changed to libkdb5.so.7<br/>
+liblwres.so.80 from bind-libs changed to liblwres.so.90<br/>
+libmpfr.so.1 from mpfr changed to libmpfr.so.4<br/>
+libpcre.so.0 from pcre changed to libpcre.so.1<br/>
+libproxy.so.0 from libproxy changed to libproxy.so.1<br/>
+libreadline.so.5 from compat-readline5 changed to libreadline.so.6<br/>
+librpm.so.1 from rpm-libs changed to librpm.so.3<br/>
+librpmbuild.so.1 from rpm-libs changed to librpmbuild.so.3<br/>
+librpmio.so.1 from rpm-libs changed to librpmio.so.3<br/>
+libruby.so.1.8 from ruby-libs changed to libruby.so.2.0<br/>
+libsasl2.so.2 from cyrus-sasl-lib changed to libsasl2.so.3<br/>
+libsasldb.so.2 from cyrus-sasl-lib changed to libsasldb.so.3<br/>
+libtasn1.so.3 from libtasn1 changed to libtasn1.so.6<br/>
+libtiff.so.3 from libtiff changed to libtiff.so.5<br/>
+libtiffxx.so.3 from libtiff changed to libtiffxx.so.5<br/>
+libudev.so.0 from libudev changed to libudev.so.1<br/>
+libverto.so.0 from krb5-libs changed to libverto.so.1<br/>
+libxtables.so.4 from iptables changed to libxtables.so.10<br/>
+<br/>
+We checked the requirements in Non-CentOS signed packages, but for the non<br/>
+rpm-packaged binaries, you should check the compatibility list yourself<br/>
+by using e.g. ldd &lt;binary&gt; command.<br/>
+If some of your application uses the library on the list above, you will<br/>
+need to rebuild such package/application against new library.<br/>
+CentOS applications available on the CentOS 7 will handle<br/>
+these bumps automatically by the update/migration to new CentOS<br/>
+as they were already built against these libraries.<br/>
+<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: MEDIUM:  We detected some soname bumps in the libraries installed on the system. This may break the functionality of some of your 3rd party applications. They may need rebuild. Please check their requirements.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7271168">
+            <h3>Result for SonameKept Reusable Dynamic Libraries</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_SonameKept_SonameKept</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:32" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        This module provides an overview of the dynamic libraries from CentOS 6 that can be reused in CentOS 7, as the dynamic libraries remain compatible with both the application programming interface (API) and the application binary interface (ABI).
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Applications developed in the C programming language can use dynamic libraries (.so files) to reuse common functions and symbols in the binary. When the library changes its soname in a major version, the binaries normally need to be rebuilt for the new system. Some libraries have not changed their soname between CentOS 6 and CentOS 7 so it could be possible to reuse third party applications which use only these libraries without rebuilding.<br/>
+<br/>
+You can find the list of the unchanged dynamic libraries and their package names in the following file: <a href="././kickstart/NoSonameBumpLibs">./kickstart/NoSonameBumpLibs</a><br/>
+<br/>
+If it is not clear what libraries the third party binary or RPM uses, it is possible to use the ldd utility for the C binary, or run the &quot;rpm -q --whatrequires SONAME&quot; command for the whole RPM package. No problems are expected to occur if there are only .so files listed in the NoSonameBumpLibs file and unversioned shared libraries.<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7277584">
+            <h3>Result for Removed .so libs</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_SonameRemoval_SonameRemoval</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:34" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Dynamic libraries are used provides symbols/functions to binaries. Some of the libraries were removed between CentOS 6 and CentOS 7. This content checks for the .so libraries removal between CentOS 6 and CentOS 7 in your CentOS packages.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Application developed in C may use dynamic libraries (.so files) to reuse the<br/>
+common functions/symbols in the binary. If the library is missing, application<br/>
+will not run. Some of the libraries were removed between CentOS 6 and CentOS 7.<br/>
+From your CentOS 6 packages, following libraries disappeared:<br/>
+<br/>
+_codecs_iso2022.so from python-libs<br/>
+db2.so.0 from krb5-libs<br/>
+libc-client.so.2007 from libc-client<br/>
+libck-connector.so.0 from ConsoleKit-libs<br/>
+libcloog.so.0 from cloog-ppl<br/>
+libcupsdriver.so.1 from cups-libs<br/>
+libdrm_nouveau2.so.2 from libdrm<br/>
+libeggdbus-1.so.0 from eggdbus<br/>
+libevent-1.4.so.2 from libevent<br/>
+libevent_core-1.4.so.2 from libevent<br/>
+libevent_extra-1.4.so.2 from libevent<br/>
+libgcj-tools.so.10 from libgcj<br/>
+libgcj.so.10 from libgcj<br/>
+libgcj_bc.so.1 from libgcj<br/>
+libgij.so.10 from libgcj<br/>
+libgnutls-extra.so.26 from gnutls<br/>
+libgpgme-pth.so.11 from gpgme<br/>
+libipq.so.0 from iptables<br/>
+libldif-2.4.so.2 from openldap<br/>
+libmp.so.3 from gmp<br/>
+libnih-dbus.so.1 from libnih<br/>
+libnih.so.1 from libnih<br/>
+libpangox-1.0.so.0 from pango<br/>
+libpolkit-backend-1.so.0 from polkit<br/>
+libppl.so.7 from ppl<br/>
+libppl_c.so.2 from ppl<br/>
+libpython2.6.so.1.0 from python-libs<br/>
+libstdc++-libc6.2-2.so.3 from libstdc++<br/>
+libusbpp-0.1.so.4 from libusb<br/>
+libverto-k5ev.so.0 from krb5-libs<br/>
+<br/>
+We checked the requirements in Non-CentOS signed packages, but for the non<br/>
+rpm-packaged binaries, you should check the compatibility list yourself<br/>
+by using e.g. ldd &lt;binary&gt; command.<br/>
+If some of your application uses the library on the list above, you may need<br/>
+to get the .so library from different place or search for an alternative.<br/>
+<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: MEDIUM:  We detected some .so libraries installed on the system were removed between CentOS 6 and CentOS 7. This may break the functionality of some of your 3rd party applications.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7284960">
+            <h3>Result for In-place Upgrade Requirements for the /usr/ Directory</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_UsrPartition_usr</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:34" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        This module determines if the /usr/ directory is located on a separate partition.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7292416">
+            <h3>Result for CA certificate bundles modified</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_ca-certificates_checkbundles</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:34" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Later versions of CentOS include a shared store for certificate authorities. Additional trusted certificate authorities must be placed in the new location rather that modifying the distributed certificate authority bundles. The Preupgrade assistant cannot automatically identify how certificate bundles have been modified on this system.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7298880">
+            <h3>Result for Developer Tool Set packages</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_dts_dts</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:34" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Content checks whether Red Hat Developer Tool Set packages are installed.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7305232">
+            <h3>Result for Hyper-V</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_hyperv_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:34" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Check if this system runs on Hyper-V.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7311616">
+            <h3>Result for Content for enabling and disabling services based on CentOS 6 system</h3>
+            <p class="result-needs_action">Result: <strong class="strong">needs_action</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_initscripts_control_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:36" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        The content checks what services are enabled or disabled on assessment system and if the services will be enabled or disabled on CentOS 7 system.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              The content detects some services who are disabled by default on CentOS 7 system.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: MEDIUM: The service ajenti is not installed by CentOS signed packages and will not be automatically enabled after in-place upgrade.
+INPLACERISK: HIGH: The service blk-availability on CentOS 7 is disabled by default. Enable them via commands: systemctl enable blk-availability &amp;&amp; systemctl start blk-availability.service .
+INPLACERISK: HIGH: The service httpd on CentOS 7 is disabled by default. Enable them via commands: systemctl enable httpd &amp;&amp; systemctl start httpd.service .
+INPLACERISK: HIGH: The service ip6tables on CentOS 7 is disabled by default. Enable them via commands: systemctl enable ip6tables &amp;&amp; systemctl start ip6tables.service .
+INPLACERISK: HIGH: The service messagebus on CentOS 7 is disabled by default. Enable them via commands: systemctl enable messagebus &amp;&amp; systemctl start messagebus.service .
+INPLACERISK: MEDIUM: The service mysql is not installed by CentOS signed packages and will not be automatically enabled after in-place upgrade.
+INPLACERISK: HIGH: The service netfs on CentOS 7 is disabled by default. Enable them via commands: systemctl enable netfs &amp;&amp; systemctl start netfs.service .
+INPLACERISK: HIGH: The service network on CentOS 7 is disabled by default. Enable them via commands: systemctl enable network &amp;&amp; systemctl start network.service .
+INPLACERISK: HIGH: The service ntpd on CentOS 7 is disabled by default. Enable them via commands: systemctl enable ntpd &amp;&amp; systemctl start ntpd.service .
+INPLACERISK: HIGH: The service sendmail on CentOS 7 is disabled by default. Enable them via commands: systemctl enable sendmail &amp;&amp; systemctl start sendmail.service .
+INPLACERISK: HIGH: The service udev-post on CentOS 7 is disabled by default. Enable them via commands: systemctl enable udev-post &amp;&amp; systemctl start udev-post.service .
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7320512">
+            <h3>Result for Check for ethernet interface naming</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_initscripts_ifcfg_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:36" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        The content checks if network interface names set through /etc/sysconfig/network-scripts/ifcfg-* files are compatible with device naming in CentOS 7.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7327008">
+            <h3>Result for User modification in /etc/rc.local and /etc/rc.d/rc.local</h3>
+            <p class="result-needs_action">Result: <strong class="strong">needs_action</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_initscripts_rc-local_rclocal</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:36" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        The content checks whether user modifies files /etc/rc.local and /etc/rc.d/rc.local
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              It is highly advisable to create own systemd services or udev rules<br/>
+to run scripts during boot instead of using this file.<br/>
+<br/>
+In constrast to previous versions due to parallel execution during boot<br/>
+this script will NOT be run after all other services.<br/>
+<br/>
+Please note that you must run &apos;chmod +x /etc/rc.d/rc.local&apos; to ensure<br/>
+that this script will be executed during boot.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: HIGH: File /etc/rc.d/rc.local was changed
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7341344">
+            <h3>Result for Plugable authentication modules (PAM)</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_pam_pam</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:51:37" class="date">2015-01-06 13:51</abbr></strong></p>
+            <p>
+        Content checks for no-longer supported pluggable authentication modules
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7348544">
+            <h3>Result for Foreign Perl modules</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_perl_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:30" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        Find Perl modules which need to be checked for proper functionality with newer Perl version on the CentOS 7 system because they are not distributed by CentOS
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              Perl was updated from version 5.10 to version 5.16. Please read Perl<br/>
+section in the CentOS 7 Developer Guide for more details.<br/>
+<br/>
+Following Perl module files located in system Perl paths are either not<br/>
+handled by any package or not signed by CentOS:<br/>
+<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7354928">
+            <h3>Result for Python 2.7.5</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_python_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:34" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        This module provides you with a list of packages that need to be rebuilt for version 2.7.5 of the Python programming language that is shipped with CentOS 7.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              This solution text contains a list of packages that need to be rebuilt for Python 2.7.5, which is shipped with CentOS 7.<br/>
+<br/>
+CentOS 7 contains Python version 2.7.5. For information about the differences from older versions and for further details, see <a href="https://access.redhat.com/site/articles/676453">https://access.redhat.com/site/articles/676453</a>.<br/>
+<br/>
+The files and directories listed below are not owned by any RPM package or are owned by an RPM package that is not signed by CentOS. These packages need to be rebuilt and reinstalled in order to work with Python 2.7.5. You can find more details at <a href="https://access.redhat.com/site/articles/676453">https://access.redhat.com/site/articles/676453</a>.<br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/ajenti is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/ajenti-1.2.22.13-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/catcher is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/daemon is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/exconsole is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/gevent_socketio-0.3.6-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/gevent_websocket-0.9.3-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/geventwebsocket is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/passlib is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/passlib-1.5.3-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/python_catcher-0.1.7-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/python_daemon-1.5.2-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/python_exconsole-0.1.5-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/reconfigure is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/reconfigure-0.1.64-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib/python2.6/site-packages/socketio is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib64/python2.6/site-packages/gevent is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib64/python2.6/site-packages/gevent-1.0.1-py2.6.egg-info is owned by an RPM package that was not signed by CentOS.
+INPLACERISK: SLIGHT: /usr/lib64/python2.6/site-packages/psutil is owned by an RPM package that was not signed by CentOS.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7364400">
+            <h3>Result for Ruby 2.0.0</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_ruby_check</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:35" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        This module provides you with a list of packages that need to be rebuilt for version 2.0.0 of the Ruby programming language, which is shipped with CentOS 7.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              CentOS 7 contains Ruby version 2.0.0. The system paths for libraries and gems have changed from CentOS 6.<br/>
+<br/>
+The files and directories listed below are not owned by any RPM package or are owned by an RPM package that is not signed by CentOS. These packages need to be rebuilt and reinstalled in order to work with Ruby 2.0.0.<br/>
+<br/>
+For information on how to migrate Ruby from CentOS 6 to CentOS 7, please refer to the following Knowledge Base article: <a href="https://access.redhat.com/site/articles/790123">https://access.redhat.com/site/articles/790123</a><br/>
+</p>
+            </div>
+            <pre class="code">
+              <code>
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/actionmailer-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/actionpack-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/activemodel-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/activerecord-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/activeresource-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/activesupport-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/arel-3.0.2 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/bourbon-4.0.0 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/builder-3.0.4 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/bundler-1.2.3 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/erubis-2.7.0 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/hike-1.2.1 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/i18n-0.6.1 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/journey-1.0.4 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/json-1.7.5 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/mail-2.4.4 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/mime-types-1.19 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/multi_json-1.5.0 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/neat-1.6.0 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/polyglot-0.3.3 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rack-1.4.1 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rack-cache-1.2 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rack-ssl-1.3.2 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rack-test-0.6.2 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rails-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/railties-3.2.9 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rake-10.0.3 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/rdoc-3.12 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/sass-3.2.13 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/sass-3.3.5 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/sprockets-2.2.2 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/thor-0.16.0 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/tilt-1.3.3 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/treetop-1.4.12 is not owned by any RPM package.
+INPLACERISK: SLIGHT: /usr/lib/ruby/gems/1.8/gems/tzinfo-0.3.35 is not owned by any RPM package.
+</code>
+            </pre>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7392000">
+            <h3>Result for YUM</h3>
+            <p class="result-informational">Result: <strong class="strong">informational</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_system_yum_yum</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:35" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        Content checks YUM configuration file
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              After the upgrade it will be impossible to undo/redo/rollback to pre-upgrade yum transactions. Please run &apos;yum history new&apos; after the upgrade to start a new history file.<br/>
+<br/>
+The way yum groups work has changed in CentOS 7. By default yum treats groups as objects now. Please refer to the documentation for more information.<br/>
+<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7398352">
+            <h3>Result for Check for usage of dangerous range of UID/GIDs</h3>
+            <p class="result-needs_inspection">Result: <strong class="strong">needs_inspection</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_usrmgmt_DangerousRanges_dangerousranges</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:36" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        In CentOS 6, limit for system accounts was 500, in CentOS 7 it was raised to 1000. Therefore some user accounts might be in this range. In addition, usage of unreserved ids between 0 and 200 is prohibited. This content checks for these two violations of standards which may bring issues during migration.
+        
+      </p>
+            <div class="xccdf-fixtext">
+              <h4 class="short">Remediation instructions</h4>
+              On CentOS 6, system account ids were bellow 500.<br/>
+This changes on CentOS 7, range reserved for<br/>
+system account is now 0-999. This may cause troubles for the<br/>
+migration. In addition, range 0-199 is prohibited to use without<br/>
+static id reservation in setup package. Id&apos;s in this range might<br/>
+be reserved and used later by some package, thus using them may cause<br/>
+malfunction of such package.<br/>
+<br/>
+Following problems were found on your system:<br/>
+<br/>
+User &quot;y&quot; uses id 500 - this is in the range of system accounts.<br/>
+<br/>
+group &quot;b&quot; uses id 500 - this is in the range of system accounts.<br/>
+group &quot;y&quot; uses id 501 - this is in the range of system accounts.<br/>
+<br/>
+<br/>
+These accounts should be migrated into the &quot;safe&quot; zone above 1000!<br/>
+As an alternative, you can change the default ranges in /etc/login.defs to<br/>
+the old CentOS 6 values if you require this by your system setup settings.<br/>
+<br/>
+</p>
+            </div>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+          <div class="result-detail" id="ruleresult-idp7404848">
+            <h3>Result for Incorrect usage of reserved UID/GIDs</h3>
+            <p class="result-pass">Result: <strong class="strong">pass</strong></p>
+            <p>Rule ID: <strong class="strong">xccdf_preupg_rule_usrmgmt_ReservedIDs_reservedids</strong></p>
+            <p>Time: <strong class="strong"><abbr title="2015-01-06T13:52:38" class="date">2015-01-06 13:52</abbr></strong></p>
+            <p>
+        Reserved user and group IDs by setup package changed between the CentOS 6 and CentOS 7. This may in some cases cause the unfunctionality of your system after the migration. This check should mitigate the risks.
+        
+      </p>
+            <p class="link">
+              <a href="#results-overview">results overview</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <p> Generated by <a href="http://open-scap.org">OpenSCAP</a>
+      (1.0.2)
+     on <abbr title="2015-01-06T13:52:39-05:00" class="date">2015-01-06 13:52</abbr>.</p>
+      </div>
+    </div>
+  </body>
+</html>
